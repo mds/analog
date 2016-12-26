@@ -1,15 +1,6 @@
-# Analog-Garage
+# Analog-Portal
 
-Static front-end template for Analog Garage.
-
-## Features
-* [Jekyll](https://github.com/jekyll/jekyll)
-* [Tachyons](https://github.com/tachyons-css/tachyons)
-* [Chart.js](https://github.com/chartjs/Chart.js)
-* [PostCSS](https://github.com/postcss/postcss)
-* [BrowserSync](https://github.com/BrowserSync/browser-sync)
-* [Gulp](https://github.com/gulpjs/gulp)
-
+Static template for Analog Customer Portal front-end.
 
 ## Install
 
@@ -19,8 +10,116 @@ $ bundle install
 $ npm install
 ```
 
-Dev server: `Gulp Dev`
-Build static site: ` Gulp Publish `
+## Run Commands
+
+```sh
+$ gulp dev
+$ gulp publish
+```
+
+- `$ gulp dev` will start a development server, build the Jekyll site, watch for changes, and stream changes without having to refresh.
+
+- `$ gulp publish` will copy and optimize assets and run a production build of Jekyll, which can be found in the *_sites* directory.
+
+## Languages & tools
+
+###### HTML
+
+- [Jekyll](https://github.com/jekyll/jekyll) is used to generate static html
+- [Liquid Template Engine](https://github.com/Shopify/liquid) for markup and data
+
+###### JavaScript
+
+- [Chart.js](https://www.npmjs.com/package/chart.js) is used to create the camera charts
+- [Browserify](http://browserify.org/) is used to run a local server and synchronise URLs, interactions and code changes across multiple devices
+- [PostCSS](https://github.com/postcss/postcss) is used to process and transform css with JS plugins
+- [Jquery](https://github.com/jquery) is used for simple UI animations
+
+###### CSS
+
+* [Tachyons](https://github.com/tachyons-css/tachyons) is a functional, global css library for building the UI
+
+###### Other
+
+- [Gulp](https://github.com/gulpjs/gulp) is used for build tasks, automating, miniyfing, etc.
+
+
+## Structure
+
+###### Data
+
+Some components and lists are populated by using *liquid variables* to access data listed in .yml files in the *_data* directory
+
+```
+_data
+|   |- assets.yml                       # List of assets data for presentation
+|   |- pins.yml                         # List of pins data for presentation
+```
+
+###### Components
+
+Components are standard HTML snippets that are included in their respective pages.
+
+```
+_includes/
+|- components/
+|   |-
+|   |- alerts.html                      # Alerts Notifications Component
+|   |- asset-pin.html                   # Asset Pin Component
+|   |- asset.html                       # Asset Component            
+|   |- camera-activity.html             # Camera Activity Component                    
+|   |- camera-list.html                 # Camera List Component                
+|   |- camera-single.html               # Camera With Chart Component                    
+|   |- group-map-grid.html              # Group Map No Image Component                    
+|   |- group.html                       # Group Component            
+|   |- hotspots.html                    # Hot Spots Component            
+|   |- input-with-desc.html             # Input With Description Component                    
+|   |- input.html                       # Input Component            
+|   |- modal-video.html                 # Modal Video Component                
+|   |- modal.html                       # Modal Component            
+|   |- notification.html                # Notification Global Component                
+|   |- notifications.html               # Notifications List Normal Component                    
+|   |- textarea-with-desc.htm           # Textarea With Description Component                       
+|   |- textarea.html                    # Textarea Component            
+|   |- tooltip-above.html               # Tooltip Above Component                    
+|   |- tooltip-below.html               # Tooltip Below Component                    
+|
+|- layout/
+|   |-
+|   |- breadcrumbs.html                 # UI Breadcrumbs
+|   |- footer.html                      # UI Footer
+|   |- head.html                        # HTML Head
+|   |- header.html                      # UI Header
+```
+
+
+###### CSS
+
+Components utilize Tachyons' predefined modular css classes. Any additional styles or edge cases are defined in main.css. Running `$ gulp publish` concatenates all modules and css files to *_site/css/main.css*
+
+```
+css/
+|- main.css                             # UI Styles & Overrides
+|
+|- tachyons/
+|   |- ...                              # Tachyons Modules
+|   |- _skins.css                       # Branded Skins Module
+|   |- tachyons.css                     # Concatenated Modules
+```
+
+
+###### Javascript
+Javascript usage is minimal and mostly presentational, with the exception of chart.js, which can be swapped out with a React version of chart.js.
+
+```
+js/
+|- jquery.min.js                        # UI functions
+|- chance.min.js                        # Generates random data
+|- chart.js                             # Charts
+|- fastclick.js                         # Speeds up mobile links
+|- site.js                              # UI functions
+```
+
 
 ## Dependencies
 
@@ -46,115 +145,3 @@ Package | Version
 [postcss-custom-media](https://www.npmjs.com/package/postcss-custom-media) | ^5.0.1
 [postcss-import](https://www.npmjs.com/package/postcss-import) | ^9.0.0
 [run-sequence](https://www.npmjs.com/package/run-sequence) | ^1.2.2
-
-
-
-## Structure
-
-#### Components
-
-````
-_includes/
-|- components/
-|  |- alerts.html________________________________ # Alerts Notifications Component
-|  |- asset-pin.html_____________________________ # Asset Pin Component
-|  |- asset.html_________________________________ # Asset Component
-|  |- camera-activity.html_______________________ # Camera Activity Component
-|  |- camera-list.html___________________________ # Camera List Component
-|  |- camera-single.html_________________________ # Camera With Chart Component
-|  |- group-map-grid.html________________________ # Group Map No Image Component
-|  |- group.html_________________________________ # Group Component
-|  |- hotspots.html______________________________ # Hot Spots Component
-|  |- input-with-desc.html_______________________ # Input With Description Component
-|  |- input.html_________________________________ # Input Component
-|  |- modal-video.html___________________________ # Modal Video Component
-|  |- modal.html_________________________________ # Modal Component
-|  |- notification.html__________________________ # Notification Global Component
-|  |- notifications.html_________________________ # Notifications List Normal Component
-|  |- textarea-with-desc.html____________________ # Textarea With Description Component
-|  |- textarea.html______________________________ # Textarea Component
-|  |- tooltip-above.html_________________________ # Tooltip Above Component
-|  |- tooltip-below.html_________________________ # Tooltip Below Component
-|
-|- layout/
-|  |- breadcrumbs.html___________________________ # UI Breadcrumbs
-|  |- footer.html________________________________ # UI Footer
-|  |- head.html__________________________________ # HTML Head
-|  |- header.html________________________________ # UI Header
-````
-
-#### Stylesheets
-
-````
-css/
-|- main.css _____________________________________ # UI Styles & Overrides
-|
-|- tachyons/
-|  |- _background-position.css __________________ # Tachyons - Background Position Module
-|  |- _background-size.css ______________________ # Tachyons - Background Size Module
-|  |- _border-colors.css ________________________ # Tachyons - Border Colors Module
-|  |- _border-radius.css ________________________ # Tachyons - Border Radius Module
-|  |- _border-style.css _________________________ # Tachyons - Border Style Module
-|  |- _border-widths.css ________________________ # Tachyons - Border Widths Module
-|  |- _borders.css ______________________________ # Tachyons - Borders Module
-|  |- _box-shadow.css ___________________________ # Tachyons - Box Shadow Module
-|  |- _box-sizing.css ___________________________ # Tachyons - Box Sizing Module
-|  |- _clears.css _______________________________ # Tachyons - Clears Module
-|  |- _code.css _________________________________ # Tachyons - Code Module
-|  |- _colors.css _______________________________ # Tachyons - Colors Module
-|  |- _coordinates.css __________________________ # Tachyons - Coordinates Module
-|  |- _debug-children.css _______________________ # Tachyons - Debug Children Module
-|  |- _debug-grid.css ___________________________ # Tachyons - Debug Grid Module
-|  |- _debug.css ________________________________ # Tachyons - Debug Module
-|  |- _display.css ______________________________ # Tachyons - Display Module
-|  |- _flexbox.css ______________________________ # Tachyons - Flexbox Module
-|  |- _floats.css _______________________________ # Tachyons - Floats Module
-|  |- _font-family.css __________________________ # Tachyons - Font Family Module
-|  |- _font-style.css ___________________________ # Tachyons - Font Style Module
-|  |- _font-weight.css __________________________ # Tachyons - Font Weight Module
-|  |- _forms.css ________________________________ # Tachyons - Forms Module
-|  |- _heights.css ______________________________ # Tachyons - Heights Module
-|  |- _hovers.css _______________________________ # Tachyons - Hovers Module
-|  |- _images.css _______________________________ # Tachyons - Images Module
-|  |- _letter-spacing.css _______________________ # Tachyons - Letter Spacing Module
-|  |- _line-height.css __________________________ # Tachyons - Line Height Module
-|  |- _links.css ________________________________ # Tachyons - Links Module
-|  |- _lists.css ________________________________ # Tachyons - Lists Module
-|  |- _max-widths.css ___________________________ # Tachyons - Max Widths Module
-|  |- _media-queries.css ________________________ # Tachyons - Media Queries Module
-|  |- _module-template.css ______________________ # Tachyons - Module Template Module
-|  |- _normalize.css ____________________________ # Tachyons - Normalize Module
-|  |- _opacity.css ______________________________ # Tachyons - Opacity Module
-|  |- _outlines.css _____________________________ # Tachyons - Outlines Module
-|  |- _overflow.css _____________________________ # Tachyons - Overflow Module
-|  |- _position.css _____________________________ # Tachyons - Position Module
-|  |- _skins-pseudo.css _________________________ # Tachyons - Skins Pseudo Module
-|  |- _skins.css ________________________________ # Tachyons - Skins Module (Brand Colors
-|  |- _spacing.css ______________________________ # Tachyons - Spacing Module
-|  |- _styles.css _______________________________ # Tachyons - Styles Module
-|  |- _tables.css _______________________________ # Tachyons - Tables Module
-|  |- _text-align.css ___________________________ # Tachyons - Text-align Module
-|  |- _text-decoration.css ______________________ # Tachyons - Text-decoration Module
-|  |- _text-transform.css _______________________ # Tachyons - Text-transform Module
-|  |- _type-scale.css ___________________________ # Tachyons - Type Scale Module
-|  |- _typography.css ___________________________ # Tachyons - Typography Module
-|  |- _utilities.css ____________________________ # Tachyons - Utilities Module
-|  |- _vertical-align.css _______________________ # Tachyons - Vertical Align Module
-|  |- _visibility.css ___________________________ # Tachyons - Visibility Module
-|  |- _white-space.css __________________________ # Tachyons - White Space Module
-|  |- _widths.css _______________________________ # Tachyons - Widths Module
-|  |- _word-break.css ___________________________ # Tachyons - Word-Break Module
-|  |- _z-index.css ______________________________ # Tachyons - Z-Index Module
-|  |- tachyons.css ______________________________ # Tachyons - All Modules Minified
-````
-
-### Javascript
-
-````
-js/
-|- jquery.min.js ____________________________ #
-|- chance.min.js ____________________________ # - Generates random data
-|- chart.js _________________________________ # - Charts
-|- fastclick.js _____________________________ # - Speed up mobile links
-|- site.js __________________________________ # - UI functions
-````

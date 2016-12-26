@@ -1,31 +1,125 @@
-# Analog-Garage
+# Analog-Portal
 
-![npm](https://img.shields.io/npm/v/Analog-Garage.svg) ![license](https://img.shields.io/npm/l/Analog-Garage.svg) ![github-issues](https://img.shields.io/github/issues/mds/analog.svg)  ![Circle CI build status](https://circleci.com/gh/mds/analog.svg?style=svg)
-
-Static frontend template for Analog Garage.
-
-![nodei.co](https://nodei.co/npm/Analog-Garage.png?downloads=true&downloadRank=true&stars=true)
-
-![travis-status](https://img.shields.io/travis/mds/analog.svg)
-![stars](https://img.shields.io/github/stars/mds/analog.svg)
-![forks](https://img.shields.io/github/forks/mds/analog.svg)
-
-![forks](https://img.shields.io/github/forks/mds/analog.svg)
-
-![](https://david-dm.org/mds/analog/status.svg)
-![](https://david-dm.org/mds/analog/dev-status.svg)
-
-## Features
-
+Static template for Analog Customer Portal front-end.
 
 ## Install
 
-`npm install --save Analog-Garage`
+```
+$ git clone https://github.com/mds/analog.git
+$ bundle install
+$ npm install
+```
+
+## Run Commands
+
+```sh
+$ gulp dev
+$ gulp publish
+```
+
+- `$ gulp dev` will start a development server, build the Jekyll site, watch for changes, and stream changes without having to refresh.
+
+- `$ gulp publish` will copy and optimize assets and run a production build of Jekyll, which can be found in the *_sites* directory.
+
+## Languages & tools
+
+###### HTML
+
+- [Jekyll](https://github.com/jekyll/jekyll) is used to generate static html
+- [Liquid Template Engine](https://github.com/Shopify/liquid) for markup and data
+
+###### JavaScript
+
+- [Chart.js](https://www.npmjs.com/package/chart.js) is used to create the camera charts
+- [Browserify](http://browserify.org/) is used to run a local server and synchronise URLs, interactions and code changes across multiple devices
+- [PostCSS](https://github.com/postcss/postcss) is used to process and transform css with JS plugins
+- [Jquery](https://github.com/jquery) is used for simple UI animations
+
+###### CSS
+
+* [Tachyons](https://github.com/tachyons-css/tachyons) is a functional, global css library for building the UI
+
+###### Other
+
+- [Gulp](https://github.com/gulpjs/gulp) is used for build tasks, automating, miniyfing, etc.
 
 
-## Scripts
+## Structure
 
- - **npm run readme** : `node ./node_modules/.bin/node-readme`
+###### Data
+
+Some components and lists are populated by using *liquid variables* to access data listed in .yml files in the *_data* directory
+
+```
+_data
+|   |- assets.yml                       # List of assets data for presentation
+|   |- pins.yml                         # List of pins data for presentation
+```
+
+###### Components
+
+Components are standard HTML snippets that are included in their respective pages.
+
+```
+_includes/
+|- components/
+|   |-
+|   |- alerts.html                      # Alerts Notifications Component
+|   |- asset-pin.html                   # Asset Pin Component
+|   |- asset.html                       # Asset Component            
+|   |- camera-activity.html             # Camera Activity Component                    
+|   |- camera-list.html                 # Camera List Component                
+|   |- camera-single.html               # Camera With Chart Component                    
+|   |- group-map-grid.html              # Group Map No Image Component                    
+|   |- group.html                       # Group Component            
+|   |- hotspots.html                    # Hot Spots Component            
+|   |- input-with-desc.html             # Input With Description Component                    
+|   |- input.html                       # Input Component            
+|   |- modal-video.html                 # Modal Video Component                
+|   |- modal.html                       # Modal Component            
+|   |- notification.html                # Notification Global Component                
+|   |- notifications.html               # Notifications List Normal Component                    
+|   |- textarea-with-desc.htm           # Textarea With Description Component                       
+|   |- textarea.html                    # Textarea Component            
+|   |- tooltip-above.html               # Tooltip Above Component                    
+|   |- tooltip-below.html               # Tooltip Below Component                    
+|
+|- layout/
+|   |-
+|   |- breadcrumbs.html                 # UI Breadcrumbs
+|   |- footer.html                      # UI Footer
+|   |- head.html                        # HTML Head
+|   |- header.html                      # UI Header
+```
+
+
+###### CSS
+
+Components utilize Tachyons' predefined modular css classes. Any additional styles or edge cases are defined in main.css. Running `$ gulp publish` concatenates all modules and css files to *_site/css/main.css*
+
+```
+css/
+|- main.css                             # UI Styles & Overrides
+|
+|- tachyons/
+|   |- ...                              # Tachyons Modules
+|   |- _skins.css                       # Branded Skins Module
+|   |- tachyons.css                     # Concatenated Modules
+```
+
+
+###### Javascript
+Javascript usage is minimal and mostly presentational, with the exception of chart.js, which can be swapped out with a React version of chart.js.
+
+```
+js/
+|- jquery.min.js                        # UI functions
+|- chance.min.js                        # Generates random data
+|- chart.js                             # Charts
+|- fastclick.js                         # Speeds up mobile links
+|- site.js                              # UI functions
+```
+
 
 ## Dependencies
 
@@ -51,16 +145,3 @@ Package | Version
 [postcss-custom-media](https://www.npmjs.com/package/postcss-custom-media) | ^5.0.1
 [postcss-import](https://www.npmjs.com/package/postcss-import) | ^9.0.0
 [run-sequence](https://www.npmjs.com/package/run-sequence) | ^1.2.2
-
-
-## Contributing
-
-Contributions welcome; Please submit all pull requests the against master branch. If your pull request contains JavaScript patches or features, you should include relevant unit tests. Please check the [Contributing Guidelines](contributng.md) for more details. Thanks!
-
-## Author
-
-Greg Corby <gerg.corby@gmail.com> http://gregcorby.com/
-
-## License
-
-undefined
