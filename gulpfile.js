@@ -21,7 +21,7 @@ gulp.task('publish', ['build', 'styles']);
 
 // Develop Site —————————————————————————————————————
 
-gulp.task('dev', ['dev-build', 'serve', 'postcss']);
+gulp.task('dev', ['dev-build', 'serve', 'css']);
 
 
 
@@ -50,7 +50,7 @@ gulp.task('serve', function () {
 });
 
 // Task for processing CSS and instantly streaming changes to browser
-gulp.task('postcss', function() {
+gulp.task('css', function() {
   var processors = [
       atImport(),
       customMedia(),

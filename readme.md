@@ -23,30 +23,30 @@ $ gulp publish
 
 ## Languages & tools
 
-###### HTML
+##### HTML
 
 - [Jekyll](https://github.com/jekyll/jekyll) is used to generate static html
 - [Liquid Template Engine](https://github.com/Shopify/liquid) for markup and data
 
-###### JavaScript
+##### JavaScript
 
 - [Chart.js](https://www.npmjs.com/package/chart.js) is used to create the camera charts
 - [Browserify](http://browserify.org/) is used to run a local server and synchronise URLs, interactions and code changes across multiple devices
 - [PostCSS](https://github.com/postcss/postcss) is used to process and transform css with JS plugins
 - [Jquery](https://github.com/jquery) is used for simple UI animations
 
-###### CSS
+##### CSS
 
 * [Tachyons](https://github.com/tachyons-css/tachyons) is a functional, global css library for building the UI
 
-###### Other
+##### Other
 
 - [Gulp](https://github.com/gulpjs/gulp) is used for build tasks, automating, miniyfing, etc.
 
 
 ## Structure
 
-###### Data
+##### Data
 
 Some components and lists are populated by using *liquid variables* to access data listed in .yml files in the *_data* directory
 
@@ -56,13 +56,13 @@ _data
 |   |- pins.yml                         # List of pins data for presentation
 ```
 
-###### Components
+##### Components
 
 Components are standard HTML snippets that are included in their respective pages.
 
 ```
-_includes/
-|- components/
+_includes   /
+|-  components/
 |   |-
 |   |- alerts.html                      # Alerts Notifications Component
 |   |- asset-pin.html                   # Asset Pin Component
@@ -93,31 +93,31 @@ _includes/
 ```
 
 
-###### CSS
+##### CSS
 
 Components utilize Tachyons' predefined modular css classes. Any additional styles or edge cases are defined in main.css. Running `$ gulp publish` concatenates all modules and css files to *_site/css/main.css*
 
 ```
 css/
-|- main.css                             # UI Styles & Overrides
+|-  main.css                            # UI Styles & Overrides
 |
-|- tachyons/
+|-  tachyons/
 |   |- ...                              # Tachyons Modules
 |   |- _skins.css                       # Branded Skins Module
 |   |- tachyons.css                     # Concatenated Modules
 ```
 
 
-###### Javascript
+##### Javascript
 Javascript usage is minimal and mostly presentational, with the exception of chart.js, which can be swapped out with a React version of chart.js.
 
 ```
 js/
-|- jquery.min.js                        # UI functions
-|- chance.min.js                        # Generates random data
-|- chart.js                             # Charts
-|- fastclick.js                         # Speeds up mobile links
-|- site.js                              # UI functions
+|-  jquery.min.js                        # UI functions
+|-  chance.min.js                        # Generates random data
+|-  chart.js                             # Charts
+|-  fastclick.js                         # Speeds up mobile links
+|-  site.js                              # UI functions
 ```
 
 

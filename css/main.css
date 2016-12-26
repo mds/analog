@@ -376,19 +376,31 @@ body.no-scroll {
   }
 }
 
-textarea, input, button { outline: none; }
+textarea, input, button, select { outline: none; }
 
-input, button {
+input, button, select {
   height: 44px;
   line-height: 44px;
 }
 
-input[type="submit"], button, .btn {
+input[type="submit"], button, .btn, select {
   box-shadow: 0 1px 3px rgba(42, 43, 117, 0.12), 0 1px 3px rgba(42, 43, 117, 0.24);
   height: 44px;
   line-height: 44px;
   display: block;
   text-align: center;
+}
+
+select {
+    background-image: url('data:image/svg+xml;utf8,<svg width="8px" height="5px" viewBox="303 21 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Sketch.</desc><defs></defs><polygon id="Rectangle-3" stroke="none" fill="#2A2C75" fill-rule="evenodd" points="311 21 307 25 303 21"></polygon></svg>');
+    background-position: calc(100% - 20px) center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.dropdown-add select {
+    width: 18rem;
 }
 
 input[type="submit"].dib, button.dib, .btn.dib {
@@ -700,7 +712,7 @@ footer p {
   transition: all 200ms ease-in-out;
 }
 
-.buttons-container .arrow {
+.buttons-container .caret {
   width: 20px;
   height: 10px;
   margin: 0 auto;

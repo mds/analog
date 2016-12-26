@@ -41,8 +41,8 @@
       <div class="absolute static-l menu-container w-100 w-50-m bg-white right-0 tl-m">
         <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="index.html" >Dashboard</a>
         <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="get-started.html" >Alert History</a>
-        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="group.html" >Notifications</a>
-        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="asset.html" >Network Profiles</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="notifications.html" >Notifications</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="network-profiles.html" >Network Profiles</a>
         <a class="black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="settings.html" >Settings</a>
         </div>
       </div>
@@ -137,7 +137,17 @@
 
       <div class="mb4">
         <label class="db fw4 mb3 fw7 lh-copy f6 q-purple-mid-dark" for="">Add to a group</label>
-        <input class="ph3 input-reset ba w-100 bg-white b--q-purple-fade ba br2 mb3" placeholder="Choose Group..." type="text" name="" id="">
+        <div class="dt mb3 w-100 dropdown-add">
+            <select class="mb0 pb0 ph3 w5 bg-white bn br2 dtc v-mid" placeholder="Select..." name="" id="">
+                <option value="">Group 1</option>
+                <option value="">Group 2</option>
+                <option value="">Group 3</option>
+            </select>
+            <span class="ph3 ma0 pa0 dtc v-mid tc">or</span>
+            <a class="w3 v-mid dtc btn plus b input-reset bn bg-white q-purple-mid-dark pointer f5 br2 ma0 fw4" href="">Add</a>
+        </div>
+
+
         <small class="f7 fw4 q-purple-mid db mb3 lh-copy">Groups are a way to manage assets in the same general area.</small>
       </div>
 
