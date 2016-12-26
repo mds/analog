@@ -1,0 +1,13 @@
+# Site settings
+title: Analog Garage Frontend
+version: "v1"
+description: "Static frontend template for Analog Garage"
+
+# Tachyons Version
+tv: "4.5.5"
+
+# Build settings
+markdown: kramdown
+
+# Exclude this stuff
+exclude: [node_modules, gulpfile.js]

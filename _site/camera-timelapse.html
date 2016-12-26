@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Camera Timelapse</title>
+  <meta name="description" content="Static frontend template for Analog Garage">
+
+  <link rel="canonical" href="/camera-timelapse.html">
+  <link rel="alternate" type="application/rss+xml" title="Analog Garage Frontend" href="/feed.xml">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/fastclick.js"></script>
+  <script src="js/chart.js"></script>
+  
+
+
+
+</head>
+
+
+  <body class="roboto bg-light-gray q-purple-mid-dark">
+
+    <header class="bg-white br0 dt-l relative widget z-9999">
+  <nav class="dt dtc-l w-100 center bg-white cf-m cf-l">
+    <div class="fl-l pl20px dtc w-100 w-auto-l db-l v-mid z-9999 relative bg-white bb bn-l b--q-purple-fade">
+      <a class="db p0 border-box pointer" id="logo" href="index.html">quantum</a>
+    </div>
+    <span class="p0 m0 bg-white dtc dn-l v-mid tc f6 fw6 bb bl b--q-purple-fade black fr z-9999 relative mobile-toggle">Menu</span>
+    <div class="fr-l dn db-l v-mid tc tr-l fixed relative-l w-100 w-auto-l left-0 menu z-999">
+      <div class="absolute static-l menu-container w-100 w-50-m bg-white right-0 tl-m">
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="index.html" >Dashboard</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="get-started.html" >Alert History</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="group.html" >Notifications</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="asset.html" >Network Profiles</a>
+        <a class="black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="settings.html" >Settings</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <form class="searchbar pa0-l ph20px db dtc-l mb0 pb0 pt0 bl-l b--q-purple-fade">
+    <fieldset class="cf bn ma0 pa0">
+      <div class="cf">
+        <input class="f7 input-reset bn fl bg-white pa3 lh-solid w-100 w-80-l br2-l br--left-l pl0" placeholder="Search for groups, assets, and cameras" autocomplete="off" type="text" name="search" value="" id="home-search">
+      </div>
+    </fieldset>
+    <div class="results bg-white pa0">
+      <div class="results-row dt ">
+
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-q-green br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Main Floor</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Asset is normal</p>
+        </div>
+      </div>
+      <div class="results-row dt ">
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-q-green br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Oil &amp; Gas Monitoring</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Asset is normal</p>
+        </div>
+      </div>
+      <div class="results-row dt ">
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-white br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Matt D. Smith</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Technical</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </form>
+</header>
+
+
+
+    <div class="center bb b--q-purple-fade">
+        <div class="cf">
+
+  <div class="fl db w-100 fw-left-col v-top br-l b--q-purple-fade full-height overflow-hidden-l relative">
+    <div class="breadcrumbs ph3 bg-light-gray relative top-0-l w-100 b--q-purple-fade bb f7">
+  <a href="#" class="q-pink dib ma0 pa0">Dashboard</a><span class="dib q-pink ph3">&rsaquo;</span><a href="#" class="dib ma0 pa0 q-pink">Main Floor</a><span class="dib q-pink ph3">&rsaquo;</span><p class="ma0 pa0 dib black">Power Supply</p>
+</div>
+
+    <img src="../images/thermal_1.jpg" class="w-100 db v-center-l" alt="">
+  </div>
+  <div class="fl db w-100 fw-right-col ph4 pv4 full-height overflow-hidden-l overflow-y-scroll-l">
+    <div class="notification-widget widget bg-q-purple-mid-dark p0 br2 mb4">
+
+        <div class="notification-row db">
+          <div class="dib status hotspot bg-q-orange">1</div>
+          <p class="asset-name db pv3 ma0 fw6 f5 white bb b--white-10 pr4 v-mid">275&deg;<span class="fr fw1 f7 pt1">12:55:00 PM</span></p>
+          <div class="pv3">
+            <a class="br2 small bg-q-purple shadow-none f7 btn white dib mr3 w-40" href="#">Abnormal</a>
+            <a class="br2 small f7 btn shadow-none ba white b--white dib mr3 w-40" href="#">Normal</a>
+          </div>
+        </div>
+
+</div>
+
+  	<div class="bb b--q-purple-fade pb4">
+      <div class="db cf mb2">
+    		<h2 class="db q-purple-dark f2 fw7 ma0">Camera 01.01<a class="btn small db f6 fw4 link br2 ph2 pv0 black bg-white widget fr" href="camera-settings.html">edit</a></h2>
+      </div>
+      <span class="mb4 ttu f7 fw5 q-purple-dark db">CAMERA ID 987976F3</span>
+  		<p class="q-purple-mid f6 fw3 w-70-l">This is a description field to give a little more context to what this camera is monitoring.</p>
+    </div>
+
+  	<div class="db pv4 assets-container cf">
+  			<script>
+    window.onload = function() {
+        var dataList = chance.n(chance.integer, 80, {min: 90, max: 110});
+        var ctxSingle = document.getElementById("cam-single").getContext("2d");
+        window.myLine = new Chart(ctxSingle, {
+          type: 'line',
+          data: {
+              labels: ["11/17", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "","11/18"],
+              datasets: [{
+                  fill: false,
+                  lineTension: '0',
+                  radius: '0',
+                  borderJoinStyle: 'round',
+                  borderWidth: 1,
+                  backgroundColor: '#ffffff',
+                  borderColor: '#47BF43',
+                  data: dataList
+              }]
+          },
+          options: {
+              defaultFontColor: '#47BF43',
+              responsive: true,
+              legend:{
+                  display: false,
+              },
+
+              hover: {
+                  mode: 'nearest',
+                  intersect: true
+              },
+              scaleLineColor : "transparent",
+              scales: {
+                xAxes: [{
+                    gridLines: {
+                         display: false,
+                         drawBorder: false,
+                    },
+                    ticks: {
+                      maxRotation: 0
+
+                    },
+                 }],
+                 yAxes: [{
+                   ticks: {
+                     min: 90,
+                     max: 120,
+                     stepSize: 120,
+                     fontColor: '#292977',
+                     fontFamily: 'Roboto',
+                     fontStyle: 'bold',
+                     padding: 20,
+                     position: 'right',
+
+                   },
+
+                   gridLines: {
+                        drawBorder: false,
+
+                   },
+                 }]
+              }
+          }
+        });
+        window.myLine.resize();
+    };
+</script>
+
+
+
+<article class="bg-white w-100 widget br2 b--black-10 mb3 pt3 pr3">
+
+    <canvas id="cam-single" height="100px"></canvas>
+    <a class="q-pink fw6 tc mt0 pt0 pb3 db f7" href="camera-timelapse.html">&#9658; View Time Lapse</a>
+
+</article>
+
+        <div class="notification-widget widget bg-white pa3 pr0 br2 cam">
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100 bb b--q-purple-fade pb3 mb3">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+  <div class="notification-row db">
+    <div class="dt mb1 cf w-100 pr3">
+      <div class="db status status-anomaly bg-q-orange"></div>
+      <p class="asset-name fl w-50 db pa0 ma0 fw6 f5" href="#">275&deg;</p>
+      <p class="fr w50 asset-name db pa0 ma0 fw4 f7 q-purple-mid" href="#">11/19/2016,  12:55:00 PM</p>
+    </div>
+    <p class="f7 f6-m f6-l fw4 ma0 pa0 w-100">Marked abnormal by <stong>Vamshi</strong>. <a class="q-pink">Change</a></p>
+  </div>
+
+
+
+
+</div>
+
+  	</div>
+
+  </div>
+</div>
+<div class="modal-full modal-fade fixed top-0 left-0 ph4 w-100 mw7 a-center z-9999">
+  <div class="cf">
+    <a href="camera.html" class="fr db white f6 fw6 ph3 pv1 lh-copy b--white ba br-pill mb3"><span class="mr2">&#10005;</span>Close</a>
+  </div>
+  <article class="center tc br2 p0 bg-white modal overflow-hidden">
+    <div class="pa3 relative">
+      <div class="absolute absolute--fill play-overlay"></div>
+      <img src="images/video.jpg" class="db w-100"/>
+    </div>
+    <div class="f7 ph3 pv2 bg-q-purple-light bt tl b--q-purple-fade">
+      <p class="mr2 dib">Show timelapse from</p>
+      <select class="" name="">
+        <option value="">Last Week</option>
+      </select>
+    </div>
+
+  </article>
+
+</div>
+
+
+    </div>
+
+    <div class="ph4">
+      <footer class="cf w-100 v-mid">
+  <p class="db fl f8 fw4 v-mid q-purple-mid pa0 ma0">© 2017 ADI</p>
+  <div class="tr db fr">
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Contact Us</a>
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Privacy</a>
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Legal</a>
+  </div>
+</footer>
+<div class="fixed bottom-1 left-1 br2 pv2 ph3 f6 fw7 ttu bg-q-purple-dark q-pink glow o-30 show-page-links">Pages List</div>
+
+<div class="fixed bg-white pages-overlay">
+  <div class="close-page-overlay white bg-q-pink pointer">&#10005;</div>
+    <div class="overlay-scroll">
+     
+
+         <a href="/asset-settings.html" class="q-pink">Asset » Asset Settings</a>
+
+     
+
+         <a href="/asset.html" class="q-pink">Asset</a>
+
+     
+
+         <a href="/camera-settings.html" class="q-pink">Camera » Settings</a>
+
+     
+
+         <a href="/camera-timelapse.html" class="q-pink">Camera Timelapse</a>
+
+     
+
+         <a href="/camera.html" class="q-pink">Camera</a>
+
+     
+
+         <a href="/forgot-password.html" class="q-pink">Login » Forgot Password</a>
+
+     
+
+         <a href="/get-started-2.html" class="q-pink">FTUX Step 2</a>
+
+     
+
+         <a href="/get-started-3.html" class="q-pink">FTUX Step 3</a>
+
+     
+
+         <a href="/get-started.html" class="q-pink">FTUX » Step 1</a>
+
+     
+
+         <a href="/group-add-new-image.html" class="q-pink">Group » Add New Group 2</a>
+
+     
+
+         <a href="/group-add-new.html" class="q-pink">Group » Add New Group</a>
+
+     
+
+         <a href="/group-delete.html" class="q-pink">Group » Delete Group</a>
+
+     
+
+         <a href="/group-edit.html" class="q-pink">Group » Edit Group</a>
+
+     
+
+         <a href="/group-tooltip.html" class="q-pink">Group</a>
+
+     
+
+         <a href="/group.html" class="q-pink">Group</a>
+
+     
+
+         <a href="/" class="q-pink">Dashboard</a>
+
+     
+
+         <a href="/login.html" class="q-pink">Login</a>
+
+     
+
+         <a href="/network-profile-edit.html" class="q-pink">Network Profile » Edit</a>
+
+     
+
+         <a href="/network-profiles.html" class="q-pink">Network Profile</a>
+
+     
+
+         <a href="/notification-existing-list.html" class="q-pink">Notifications » Lists</a>
+
+     
+
+         <a href="/notification-new-list.html" class="q-pink">Notifications » New List</a>
+
+     
+
+         <a href="/notifications.html" class="q-pink">Notifications</a>
+
+     
+
+         <a href="/settings-billing.html" class="q-pink">Settings » Billing</a>
+
+     
+
+         <a href="/settings-edit-member.html" class="q-pink">Settings » Edit Member</a>
+
+     
+
+         <a href="/settings-member.html" class="q-pink">Settings » Members</a>
+
+     
+
+         <a href="/settings-new-user.html" class="q-pink">Settings » New User</a>
+
+     
+
+         <a href="/settings.html" class="q-pink">Settings</a>
+
+     
+     </div>
+ </div>
+
+
+    </div>
+
+  </body>
+
+</html>

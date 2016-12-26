@@ -1,0 +1,39 @@
+- count: 1
+  top: 23%
+  left: 86%
+  status: ok
+
+- count: 2
+  top: 8%
+  left: 39%
+  status: ok
+
+- count: 3
+  top: 38%
+  left: 7%
+  status: anomaly
+
+- count: 4
+  top: 4%
+  left: 56%
+  status: ok
+
+- count: 5
+  top: 32%
+  left: 45%
+  status: ok
+
+- count: 6
+  top: 15%
+  left: 9%
+  status: anomaly
+
+- count: 7
+  top: 87%
+  left: 19%
+  status: ok
+
+- count: 8
+  top: 68%
+  left: 17%
+  status: ok

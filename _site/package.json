@@ -1,0 +1,40 @@
+{
+  "name": "Analog-Garage",
+  "version": "1.0.0",
+  "description": "Static frontend template for Analog Garage.",
+  "main": "index.js",
+  "repository": "mds/analog",
+  "scripts": {
+    "readme": "node ./node_modules/.bin/node-readme"
+  },
+  "author": {
+    "name" : "Greg Corby",
+    "email" : "gerg.corby@gmail.com",
+    "url" : "http://gregcorby.com/"
+  },
+
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "browser-sync": "^2.17.5",
+    "css": "^2.2.1",
+    "cssnano": "^3.8.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-include": "^2.3.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-watch": "^4.3.11",
+    "lodash": "^4.16.4",
+    "node-readme": "^0.1.9",
+    "postcss-css-variables": "^0.6.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-import": "^9.0.0",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "chart.js": "^2.4.0"
+  }
+}

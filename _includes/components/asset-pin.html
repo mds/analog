@@ -1,0 +1,4 @@
+
+{% for pin in site.data.pins %}
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute {{ pin.status }}" style="top: {{ pin.top }}; left: {{ pin.left }};" data-pin-number="{{ pin.count }}"></div>
+{% endfor %}

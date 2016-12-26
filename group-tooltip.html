@@ -1,0 +1,47 @@
+---
+layout: full-width
+title: Group
+---
+
+<div class="w-100 cf">
+
+  <div class="fl db w-100 fw-left-col v-top br-l b--q-purple-fade full-height overflow-hidden-l relative">
+    {% include layout/breadcrumbs.html %}
+    <div class="full-height-container">
+
+
+        <div class="map-grid contain-content relative">
+          <div class="pointer edit-map-button absolute bottom-1 left-1 widget bg-white br2">{% include components/tooltip-above.html %}</div>
+          {% include components/asset-pin.html %}
+        </div>
+
+
+      <div class="save-position relative absolute-l bottom-0-l w-100 left-0 bt-l bb bb-0-l b--q-purple-fade">
+        <div class="dt bg-white pv2 ph3 w-100">
+            <div class="dtc v-mid"><p>Reposition Assets</p></div>
+            <div class="tr dtc v-mid">
+              <p class="tc dib f6 fw4 link br2 pv2 q-pink bg-white w3 cancel-position pointer">Cancel</p>
+              <a class="tc dib f6 fw4 link br2 pv2 white bg-q-purple widget w3" href="camera-settings.html">Save</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl db w-100 fw-right-col ph4 pv4 full-height overflow-hidden-l overflow-y-scroll-l">
+    {% include components/alerts.html %}
+  	<div class="bb b--q-purple-fade pb4">
+      <div class="db cf mb2">
+    		<h2 class="db q-purple-dark f2 fw7 ma0">Main Floor<a class="btn small db f6 fw4 link br2 ph2 pv0 black bg-white widget fr" href="#0">edit</a></h2>
+      </div>
+  		<p class="q-purple-mid f6 fw3">Manufacturing and packaging machines on the first floor.</p>
+    </div>
+
+  	<div class="db pv4 assets-container cf">
+  		<h4 class="pl3 f6">Assets</h4>
+  	  <div class="w-100">
+  			{% include components/asset.html %}
+  	  </div>
+  	</div>
+
+  </div>
+</div>

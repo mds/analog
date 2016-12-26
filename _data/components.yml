@@ -1,0 +1,985 @@
+
+
+- name: banner-basic
+  description: |
+    <article class="mw7 center ph3 ph5-ns tc br2 pv5 1:bg-washed-green 2:dark-green mb5">
+      <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
+        This is a tagline. For x.
+      </h1>
+      <h2 class="fw2 f4 lh-copy mt0 mb3">
+        This will change things. And we want you to be involved. This text needs to
+        be longer for testing sake.
+      </h2>
+      <p class="fw1 f5 mt0 mb3">
+        Sign up for beta access or learn more about x.
+      </p>
+      <div>
+        <a class="f6 br-pill bg-dark-green no-underline washed-green ba b--dark-green grow pv2 ph3 dib mr3"
+          href="#">
+          Sign Up
+        </a>
+        <a class="f6 br-pill dark-green no-underline ba grow pv2 ph3 dib"
+          href="#">
+          Learn More
+        </a>
+      </div>
+    </article>
+
+- name: btn-solid
+  description: |
+    <a class="f6 link dim br2 ph3 pv2 mb2 dib white 1:bg-black" href="#0">2:Button Text</a>
+
+- name: btn-thin
+  description: |
+    <a class="f6 link dim br2 ba ph3 pv2 mb2 dib 1:black" href="#0">2:Button Text</a>
+
+- name: btn-normal
+  description: |
+    <a class="f6 link dim br2 ba bw1 ph3 pv2 mb2 dib 1:black" href="#0">2:Button Text</a>
+
+- name: btn-thick
+  description: |
+    <a class="f6 link dim br2 ba bw2 ph3 pv2 mb2 dib 1:black" href="#0">2:Button Text</a>
+
+- name: btn-pill-solid
+  description: |
+    <a class="f6 link dim br-pill ph3 pv2 mb2 dib white 1:bg-black" href="#0">2:Button Pill Text</a>
+
+- name: btn-pill-thin
+  description: |
+    <a class="f6 link dim br-pill ba ph3 pv2 mb2 dib 1:black" href="#0">2:Button Pill Text</a>
+
+- name: btn-pill-normal
+  description: |
+    <a class="f6 link dim br-pill ba bw1 ph3 pv2 mb2 dib 1:black" href="#0">2:Button Pill Text</a>
+
+- name: btn-pill-thick
+  description: |
+    <a class="f6 link dim br-pill ba bw2 ph3 pv2 mb2 dib 1:black" href="#0">2:Button Pill Text</a>
+
+- name: btn-pill-grow-solid
+  description: |
+    <a class="f6 grow link dim br-pill ph3 pv2 mb2 dib white 1:bg-black" href="#0">2:Button Pill Grow Text</a>
+
+- name: btn-pill-grow-thin
+  description: |
+    <a class="f6 grow link dim br-pill ba ph3 pv2 mb2 dib 1:black" href="#0">2:Button Pill Grow Text</a>
+
+- name: btn-pill-grow-normal
+  description: |
+    <a class="f6 grow link dim br-pill ba bw1 ph3 pv2 mb2 dib 1:black" href="#0">2:Button Pill Grow Text</a>
+
+- name: btn-pill-grow-thick
+  description: |
+    <a class="f6 grow link dim br-pill ba bw2 ph3 pv2 mb2 dib 1:black" href="#0">2:Button Pill Grow Text</a>
+
+- name: album-centered
+  description: |
+    <a class="dib mw5 tc black link dim"
+       title="Frank Ocean's Blonde on Apple Music"
+       href="https://geo.itunes.apple.com/us/album/blonde/id1146195596?at=1l3vqFJ&mt=1&app=music">
+
+      <img class="db ba b--black-10"/
+           alt="Frank Ocean Blonde Album Cover"
+           src="https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg"
+      >
+
+      <dl class="mt2 f6 lh-copy">
+        <dt class="clip">Title</dt>
+        <dd class="ml0">Blonde</dd>
+        <dt class="clip">Artist</dt>
+        <dd class="ml0 gray">Frank Ocean</dd>
+      </dl>
+    </a>
+
+- name: album-left
+  description: |
+    <a class="dib mw5 black link dim"
+       title="Frank Ocean's Blonde on Apple Music"
+       href="https://geo.itunes.apple.com/us/album/blonde/id1146195596?at=1l3vqFJ&mt=1&app=music">
+
+      <img class="db ba b--black-10"/
+           alt="Frank Ocean Blonde Album Cover"
+           src="https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg"
+      >
+
+      <dl class="mt2 f6 lh-copy">
+        <dt class="clip">Title</dt>
+        <dd class="ml0 fw9">Blonde</dd>
+        <dt class="clip">Artist</dt>
+        <dd class="ml0 gray">Frank Ocean</dd>
+      </dl>
+    </a>
+
+- name: news-card
+  description: |
+    <article class="bg-white center mw5 ba b--black-10 mv4">
+      <div class="pv2 ph3">
+         <h1 class="f6 ttu tracked">$1</h1>
+      </div>
+      <img src="2:http://lorempixel.com/400/200/animals/" class="w-100 db" alt="$3">
+      <div class="pa3">
+        <a href="#" class="link dim lh-title">$4</a>
+        <small class="gray db pv2">5: AMP - <time>6 hours ago</time></small>
+      </div>
+    </article>
+
+- name: product-card
+  description: |
+    <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
+      <img src="1:http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="$2">
+      <div class="pa2 ph3-ns pb3-ns">
+        <div class="dt w-100 mt1">
+          <div class="dtc">
+            <h1 class="f5 f4-ns mv0">3:Cat</h1>
+          </div>
+          <div class="dtc tr">
+            <h2 class="f5 mv0">4:$1000.00</h2>
+          </div>
+        </div>
+        <p class="f6 lh-copy measure mt2 mid-gray">
+          $5
+        </p>
+      </div>
+    </article>
+
+- name: profile-card-title
+  description: |
+    <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+      <div class="tc">
+        <img src="1:http://placekitten.com/g/600/300" class="br-100 h4 w4 dib ba b--black-05 pa2" title="2:Kitty">
+        <h1 class="f3 mb2">3:Title</h1>
+        <h2 class="f5 fw4 gray mt0">4:Subtitle</h2>
+      </div>
+    </article>
+
+- name: profile-card
+  description: |
+    <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+      <div class="tc">
+        <img src="1:http://placekitten.com/g/600/300" class="br-100 h3 w3 dib" title="2:Kitty">
+        <h1 class="f4">3:Title</h1>
+        <hr class="mw3 bb bw1 b--black-10">
+      </div>
+      <p class="lh-copy measure center f6 black-70">
+        $4
+      </p>
+    </article>
+
+- name: text-card
+  description: |
+    <article class="center mw5 mw6-ns br3 hidden ba b--black-10 mv4">
+      <h1 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">$1</h1>
+      <div class="pa3 bt b--black-10">
+        <p class="f6 f5-ns lh-copy measure">
+          $2
+        </p>
+      </div>
+    </article>
+
+- name: feature
+  description: |
+    <article class="athelas">
+      <div class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url(https://hd.unsplash.com/uploads/1413152676137eccd463c/61606b7b) no-repeat center;">
+        <div class="dtc v-mid">
+          <header class="white-70">
+            <h2 class="f6 fw1 ttu tracked mb2 lh-title">Issue Six</h2>
+            <h3 class="f6 fw1 lh-title">Summer MMXVI</h3>
+          </header>
+          <h1 class="f1 f-headline-l fw1 i white-60">The Chronicles</h1>
+          <blockquote class="ph0 mh0 measure f4 lh-copy center">
+            <p class="fw1 white-70">
+              It's the space you put between the notes that make the music.
+            </p>
+            <cite class="f6 ttu tracked fs-normal">Massimo Vignelli</cite>
+          </blockquote>
+        </div>
+      </div>
+      <div class="center measure-wide f5 pv5 lh-copy ph2">
+        <h1 class="f1 lh-title">The repercussion of ugliness is endless</h1>
+        <p>
+          The choice of paper size is one of the  rst of any given work to be printed. There are two basic paper size systems in the world: the international A sizes, and the American sizes.
+        </p>
+        <p>
+          The international Standard paper sizes, called the A series, is based
+          on a golden rectangle, the divine proportion. It is extremely handsome
+          and practical as well. It is adopted by many countries around the world
+          and is based on the German DIN metric Standards. The United States uses
+          a basic letter size (8 1/2 x 11”) of ugly proportions, and results in
+          complete chaos with an endless amount of paper sizes. It is a
+          by-product of the culture of free enterprise, competition and waste.
+          Just another example of the misinterpretations of freedom.
+        </p>
+        <p>
+          These are the basic DIN sizes in mm. for : A0, 841x1189 - A1, 594x841 -
+          A2, 420x594 - A3, 297x420 - A4, 210x297 - A5, 148x210 - A6, 105 x148 -
+          A7, 74x 105 - A8, 52x74 - A9, 37x52 - A10, 26x37.
+        </p>
+        <p>
+          The A4 is the basic size for stationary. Two thirds of it is a square,
+          a nice economical happenstance resulting from the golden rectangle.
+          It is one of the reasons we tend to use as much
+          as possible the DIN sizes: proportions are always leading to other nice proportions.
+        </p>
+        <p>
+          This does not happen with the American basic size which leads to nothing. I counted 28 different standard sizes in USA!. The only reason we use it is because everybody in USA uses it, all stationary in USA is that size, so are manilla folders,  les and of ce equipment!
+          The repercussion of ugliness is endless.
+        </p>
+      </div>
+    </article>
+
+- name: full-bleed-background
+  description: |
+    <article data-name="article-full-bleed-background">
+      <div class="cf" style="background: url(http://mrmrs.io/photos/12.jpg) no-repeat center center fixed; background-size: cover;">
+        <div class="fl pa3 pa4-ns bg-white black-70 measure-narrow f3 times">
+          <header class="bb b--black-70 pv4">
+            <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3 avenir">Prasat Suor Prat</h3>
+            <h4 class="f3 fw4 i lh-title mt0">Siem Reap, Cambodia</h4>
+          </header>
+          <section class="pt5 pb4">
+            <p class="times lh-copy measure f4 mt0">
+              Prasat Suor Prat (Khmer: ប្រាសាទសួព្រ័ត) is a series of twelve towers spanne
+              north to south lining the eastern side of royal square in Angkor Thom,
+              near the town of Siem Reap, Cambodia. The towers are made from rugged
+              laterite and sandstone. The towers are located right in front of
+              Terrace of the Elephants and Terrace of the Leper King, flanking the
+              start of the road leading east to the Victory Gate, on either side of
+              which they are symmetrically arranged. Their function remains unknown.
+            </p>
+          </section>
+        </div>
+      </div>
+    </article>
+
+- name: large-title-text
+  description: |
+    <article class="pa3 pa5-ns">
+      <h1 class="f2 f-subheadline-ns mb4">$1</h1>
+      <p class="gray f6 mb4 ttu tracked">$2</p>
+      <p class="f4 f3-ns measure lh-copy">
+        $3
+      </p>
+    </article>
+
+- name: left-title-top
+  description: |
+    <article class="cf ph3 ph5-ns pv5">
+      <header class="fn fl-ns w-50-ns pr4-ns">
+        <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+          $1
+        </h1>
+        <h2 class="f3 mid-gray lh-title">
+          $2
+        </h2>
+        <time class="f6 ttu tracked gray">3:Time ago</time>
+      </header>
+      <div class="fn fl-ns w-50-ns">
+        <p class="f5 lh-copy measure mt0-ns">
+          $4
+        </p>
+      </div>
+    </article>
+
+- name: left-title
+  description: |
+    <article class="cf ph3 ph5-ns pv5">
+      <header class="fn fl-ns w-50-ns pr4-ns">
+        <h1 class="mb3 mt0 lh-title">$1</h1>
+        <time class="f6 ttu tracked gray">2:Time ago</time>
+      </header>
+      <div class="fn fl-ns w-50-ns">
+        <p class="lh-copy measure mt4 mt0-ns">
+          $3
+        </p>
+      </div>
+    </article>
+
+- name: photo-essay
+  description: |
+    <article class="helvetica pb5">
+      <header class="vh-100 bg-light-pink dt w-100">
+        <div
+          style="background:url(http://mrmrs.io/photos/display.jpg) no-repeat center right;background-size: cover;"
+          class="dtc v-mid cover ph3 ph4-m ph5-l">
+          <h1 class="f2 f-subheadline-l measure lh-title fw9">A Night Taking Photos at San Francisco’s Spooky Ruins of the Sutro Baths</h1>
+          <h2 class="f6 fw6 black">A story by Nancy Drew</h2>
+        </div>
+      </header>
+      <div class="serif ph3 ph4-m ph5-l">
+        <p class="lh-copy f5 f3-m f1-l measure center pv4">
+          On <time>March 14, 1896</time>, the Sutro Baths were opened to the public as the world's largest indoor swimming pool establishment. </p>
+        <div class="f5 f3-m lh-copy">
+          <div class="cf dt-l w-100 bt b--black-10 pv4">
+            <div class="dtc-l v-mid mw6 pr3-l">
+              <img class="w-100" src="http://mrmrs.io/photos/009.jpg" alt=""/>
+            </div>
+            <div class="dtc-l v-mid f6 f5-m f4-l measure-l">
+              <p class="measure pv4-l center">
+                <span class="fw9 fw4-ns">
+                  Before it burned to the ground, the structure</span> filled a small beach
+                inlet below the Cliff House, also owned by Adolph Sutro at the time.
+                Shortly after closing, a fire in 1966 destroyed the building
+                while it was in the process of being demolished. All that remains
+                of the site are concrete walls, blocked off stairs and
+                passageways, and a tunnel with a deep crevice in the middle. The
+                cause of the fire was arson. Shortly afterwards, the developer
+                left San Francisco and claimed insurance money.
+              </p>
+            </div>
+          </div>
+          <div class="cf dn">
+            <div class="fl w-100 w-50-l">
+              <p class="f5 pv4">
+                During high tides, water would flow directly into the pools from the
+                nearby ocean, recycling the <span class="db f4 f3-m f1-l fw6 measure lh-title">two million US gallons of water in about an hour. </span>
+              </p>
+            </div>
+            <div class="fl w-100 w-50-l">
+              <p class="f5">
+                During low tides, a powerful turbine water pump,
+                built inside a cave at sea level, could be switched on from a control
+                room and could fill the tanks at a rate of 6,000 US gallons a minute,
+                recycling all the water in five hours.
+              </p>
+            </div>
+          </div>
+          <div class="cf">
+            <div class="fl w-100 w-50-l pr2-l pb3">
+              <img class="db w-100" src="http://mrmrs.io/photos/010.jpg">
+            </div>
+            <div class="fl w-50 w-50-l pr1 pr0-l pl2-l pb3">
+              <img class="db w-100" src="http://mrmrs.io/photos/011.jpg">
+            </div>
+            <div class="fl w-50 w-50-l pl2 pl0-l pr2-l pb3">
+              <img class="db w-100" src="http://mrmrs.io/photos/012.jpg">
+            </div>
+            <div class="fl w-100 w-50-l pl2-l">
+              <img class="db w-100" src="http://mrmrs.io/photos/013.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+- name: single-column-large-title
+  description: |
+    <article class="baskerville pb5">
+      <header class="avenir tc-l ph3 ph4-ns pt4 pt5-ns">
+        <h1 class="f3 f2-m f-subheadline-l measure lh-title fw1 mt0">A Night of Taking Photos at the Spooky Ruins of the Sutro Baths</h1>
+        <time class="f5 f4-l db fw1 baskerville mb4"> March 19th, 2015</time>
+        <img class="w-100 dib measure f3" src="http://mrmrs.io/photos/009.jpg" alt="A photo of sutro baths by Adam Morse"/>
+      </header>
+      <div class="ph3 ph4-m ph5-l">
+        <p class="f4 mb4 center measure lh-copy">
+          On <time>March 14, 1896</time>, the Sutro Baths were opened to the public as the world's largest indoor swimming pool establishment. </p>
+        <div class="measure db center f5 f4-ns lh-copy">
+          <img class="db w-100 mt4 mt5-ns" src="http://mrmrs.io/photos/013.jpg">
+          <p>
+            Before it burned to the ground, the structure filled a small beach
+            inlet below the Cliff House, also owned by Adolph Sutro at the time.
+            Shortly after closing, a fire in 1966 destroyed the building
+            while it was in the process of being demolished.
+          </p>
+          <img class="db w-100 mt4 mt5-ns" src="http://mrmrs.io/photos/012.jpg">
+          <p>
+            During high tides, water would flow directly into the pools from the
+            nearby ocean, recycling the two million US gallons of water in about an hour.
+          </p>
+          <img class="db w-100 mt4 mt5-ns" src="http://mrmrs.io/photos/010.jpg">
+          <p>
+            All that remains
+            of the site are concrete walls, blocked off stairs and
+            passageways, and a tunnel with a deep crevice in the middle. The
+            cause of the fire was arson. Shortly afterwards, the developer
+            left San Francisco and claimed insurance money.
+          </p>
+          <img class="db w-100 mt4 mt5-ns" src="http://mrmrs.io/photos/011.jpg">
+          <p>
+            During low tides, a powerful turbine water pump,
+            built inside a cave at sea level, could be switched on from a control
+            room and could fill the tanks at a rate of 6,000 US gallons a minute,
+            recycling all the water in five hours.
+          </p>
+        </div>
+      </div>
+    </article>
+
+- name: title-text-image
+  description: |
+    <article class="pa3 pa5-ns">
+      <h1 class="f2">$1</h1>
+      <img src="$2" class="w-100 f5 measure" alt="outer space">
+      <p class="measure lh-copy">
+        $3
+      </p>
+    </article>
+
+- name: title-text
+  description: |
+    <article class="pa3 pa5-ns">
+      <h1 class="">$1</h1>
+      <p class="measure lh-copy">
+        $2
+      </p>
+    </article>
+
+- name: simple-large-type
+  description: |
+    <footer class="ph3 ph4-ns pv6 bt b--black-10 black-70">
+      <a href="mailto:$1" class="link b f3 f2-ns dim black-70 lh-solid">2:hello@email.com</a>
+      <p class="f6 db b ttu lh-solid">3:© 2016 COMPANY Inc.</p>
+      <div class="mt5">
+        <a href="4:/language/" title="5:Language" class="f6 dib pr2 mid-gray dim">6:Language</a>
+        <a href="7:/terms/"    title="8:Terms" class="f6 dib ph2 mid-gray dim">9:Terms of Use</a>
+        <a href="10:/privacy/"  title="11:Privacy" class="f6 dib pl2 mid-gray dim">12:Privacy</a>
+      </div>
+    </footer>
+
+- name: simple-large-type
+  description: |
+    <footer class="ph3 ph4-ns pv6 bt b--black-10 black-70">
+      <a href="mailto:$1" class="link b f3 f2-ns dim black-70 lh-solid">2:hello@email.com</a>
+      <p class="f6 db b ttu lh-solid">3:© 2016 COMPANY Inc.</p>
+      <div class="mt5">
+        <a href="4:/language/" title="5:Language" class="f6 dib pr2 mid-gray dim">6:Language</a>
+        <a href="7:/terms/"    title="8:Terms" class="f6 dib ph2 mid-gray dim">9:Terms of Use</a>
+        <a href="10:/privacy/"  title="11:Privacy" class="f6 dib pl2 mid-gray dim">12:Privacy</a>
+      </div>
+    </footer>
+
+- name: small-print
+  description: |
+    <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+      <small class="f6 db tc">1:© 2016 <b class="ttu">SOME COMPANY Inc</b>., All Rights Reserved</small>
+      <div class="tc mt3">
+        <a href="2:/language/" title="3:Language" class="f6 dib ph2 link mid-gray dim">4:Language</a>
+        <a href="5:/terms/"    title="6:Terms" class="f6 dib ph2 link mid-gray dim">7:Terms of Use</a>
+        <a href="8:/privacy/"  title="9:Privacy" class="f6 dib ph2 link mid-gray dim">10:Privacy</a>
+      </div>
+    </footer>
+
+- name: social-circles
+  description: |
+    <footer class="pv4 ph3 ph5-ns tc">
+      <a class="link dim gray dib h2 w2 br-100 mr3 pa2 bg-near-white ba b--black-10" href="$1" title="">
+        <svg data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>facebook icon</title>
+          <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
+        </svg>
+      </a>
+      <a class="link dim gray dib h2 w2 br-100 mr3 pa2 bg-near-white ba b--black-10" href="$2" title="">
+        <svg data-icon="twitter" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>twitter icon</title>
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+        </svg>
+      </a>
+      <a class="link dim gray dib br-100 h2 w2 mr3 pa2 bg-near-white ba b--black-10" href="$3" title="">
+        <svg data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>github icon</title>
+          <path d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z"></path>
+        </svg>
+      </a>
+      <a class="link dim gray dib br-100 h2 w2 mr3 pa2 bg-near-white ba b--black-10" href="$4" title="">
+        <svg data-icon="dribbble" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>dribbble icon</title>
+          <path d="M16 0 A16 16 0 0 0 0 16 A16 16 0 0 0 16 32 A16 16 0 0 0 32 16 A16 16 0 0 0 16 0 M5 11.5 A12 12 0 0 1 11 5 A46 46 0 0 1 13.5 9.25 A46 46 0 0 1 5 11.5 M15 4 A12 12 0 0 1 21.5 5.25 A46 46 0 0 1 17 7.75 A50 50 0 0 0 15 4 M4 16 A50 50 0 0 0 15 13 A46 46 0 0 1 16 15.5 A26 26 0 0 0 6 22.5 A12 12 0 0 1 4 16 M18.5 11.5 A50 50 0 0 0 25 8 A12 12 0 0 1 28 13.75 A26 26 0 0 0 19.75 14.5 A50 50 0 0 0 18.5 11.5 M17 19.5 A46 46 0 0 1 18 28 A12 12 0 0 1 8.75 25.5 A22 22 0 0 1 17 19.5 M20.75 18.25 A22 22 0 0 1 28 17.75 A12 12 0 0 1 22 26.5 A50 50 0 0 0 20.75 18.25"></path>
+        </svg>
+      </a>
+    </footer>
+
+- name: social-text
+  description: |
+    <footer class="pv4 ph3 ph5-ns tc">
+      <a class="link dim gray dib h2 w3 br-100 mr3 " href="$1" title="">
+        <svg class="w2" data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>facebook icon</title>
+          <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
+        </svg>
+        <small class="db tc">Facebook</small>
+      </a>
+      <a class="link dim gray dib h2 w3 br-100 mr3 " href="$2" title="">
+        <svg class="w2" data-icon="twitter" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>twitter icon</title>
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+        </svg>
+        <small class="db tc">Twitter</small>
+      </a>
+      <a class="link dim gray dib br-100 h2 w3 mr3 " href="$3" title="">
+        <svg class="w2" data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>github icon</title>
+          <path d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z"></path>
+        </svg>
+        <small class="db tc">GitHub</small>
+      </a>
+      <a class="link dim gray dib br-100 h2 w3 mr3 " href="$4" title="">
+        <svg class="w2" data-icon="dribbble" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>dribbble icon</title>
+          <path d="M16 0 A16 16 0 0 0 0 16 A16 16 0 0 0 16 32 A16 16 0 0 0 32 16 A16 16 0 0 0 16 0 M5 11.5 A12 12 0 0 1 11 5 A46 46 0 0 1 13.5 9.25 A46 46 0 0 1 5 11.5 M15 4 A12 12 0 0 1 21.5 5.25 A46 46 0 0 1 17 7.75 A50 50 0 0 0 15 4 M4 16 A50 50 0 0 0 15 13 A46 46 0 0 1 16 15.5 A26 26 0 0 0 6 22.5 A12 12 0 0 1 4 16 M18.5 11.5 A50 50 0 0 0 25 8 A12 12 0 0 1 28 13.75 A26 26 0 0 0 19.75 14.5 A50 50 0 0 0 18.5 11.5 M17 19.5 A46 46 0 0 1 18 28 A12 12 0 0 1 8.75 25.5 A22 22 0 0 1 17 19.5 M20.75 18.25 A22 22 0 0 1 28 17.75 A12 12 0 0 1 22 26.5 A50 50 0 0 0 20.75 18.25"></path>
+        </svg>
+          <small class="db tc">Dribbble</small>
+      </a>
+    </footer>
+
+- name: social
+  description: |
+    <footer class="pv4 ph3 ph5-ns tc">
+      <a class="link dim gray dib h2 w2 br-100 mr3 " href="$1" title="">
+        <svg data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>facebook icon</title>
+          <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
+        </svg>
+      </a>
+      <a class="link dim gray dib h2 w2 br-100 mr3 " href="$2" title="">
+        <svg data-icon="twitter" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>twitter icon</title>
+          <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+        </svg>
+      </a>
+      <a class="link dim gray dib br-100 h2 w2 mr3 " href="$3" title="">
+        <svg data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>github icon</title>
+          <path d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z"></path>
+        </svg>
+      </a>
+      <a class="link dim gray dib br-100 h2 w2 mr3 " href="$4" title="">
+        <svg data-icon="dribbble" viewBox="0 0 32 32" style="fill:currentcolor">
+          <title>dribbble icon</title>
+          <path d="M16 0 A16 16 0 0 0 0 16 A16 16 0 0 0 16 32 A16 16 0 0 0 32 16 A16 16 0 0 0 16 0 M5 11.5 A12 12 0 0 1 11 5 A46 46 0 0 1 13.5 9.25 A46 46 0 0 1 5 11.5 M15 4 A12 12 0 0 1 21.5 5.25 A46 46 0 0 1 17 7.75 A50 50 0 0 0 15 4 M4 16 A50 50 0 0 0 15 13 A46 46 0 0 1 16 15.5 A26 26 0 0 0 6 22.5 A12 12 0 0 1 4 16 M18.5 11.5 A50 50 0 0 0 25 8 A12 12 0 0 1 28 13.75 A26 26 0 0 0 19.75 14.5 A50 50 0 0 0 18.5 11.5 M17 19.5 A46 46 0 0 1 18 28 A12 12 0 0 1 8.75 25.5 A22 22 0 0 1 17 19.5 M20.75 18.25 A22 22 0 0 1 28 17.75 A12 12 0 0 1 22 26.5 A50 50 0 0 0 20.75 18.25"></path>
+        </svg>
+      </a>
+      <div class="mt4">
+        <a href="$5" class="f6 link dim gray dib mr3 mr4-ns">6:Help</a>
+        <a href="$7" class="f6 link dim gray dib mr3 mr4-ns">8:Send feedback</a>
+        <a href="$9" class="f6 link dim gray dib mr3 mr4-ns">10:Privacy</a>
+        <a href="$11" class="f6 link dim gray dib">12:Terms</a>
+      </div>
+    </footer>
+
+- name: circle-avatar-title
+  description: |
+    <header class="tc pv4 pv5-ns">
+      <img src="1:http://www.fillmurray.com/200/200" class="br-100 pa1 ba b--black-10 h3 w3" alt="avatar">
+      <h1 class="f5 f4-ns fw6 mid-gray">2:Bill Murray</h1>
+      <h2 class="f6 gray fw2 ttu tracked">3:Charleston, SC</h2>
+    </header>
+
+- name: fixed-semi-transparent
+  description: |
+    <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+      <nav class="f6 fw6 ttu tracked">
+        <a class="link dim white dib mr3" href="#" title="$1">$2</a>
+        <a class="link dim white dib mr3" href="#" title="$2">$3</a>
+        <a class="link dim white dib mr3" href="#" title="$4">$5</a>
+        <a class="link dim white dib" href="#" title="$6">$7</a>
+      </nav>
+    </header>
+
+- name: rounded-avatar-title
+  description: |
+    <header class="tc pv4 pv5-ns">
+      <img src="1:http://www.fillmurray.com/300/300" class="br3 ba b--black-10 h3 w3" alt="avatar">
+      <h1 class="f5 f4-ns fw6 black-70">2:Jasper Whitehouse</h1>
+      <h2 class="f6 black-70 fw2 ttu tracked">3:Charleston, SC</h2>
+    </header>
+
+- name: centered-container
+  description: |
+    <section class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
+      <h1 class="mt0">Centered Container</h1>
+      <p class="lh-copy measure">
+        Combine width or max-width values with the center class to create a centered
+        container for your content.
+      </p>
+    </section>
+
+- name: flag-object-collapse
+  description: |
+    <div class="dt mw6 center pt0 pb5 pv5-m pv6-ns">
+      <div class="db dtc-ns v-mid-ns">
+        <img src="http://lorempixel.com/400/200/technics" alt="A bright blue sky" class="w-100 mw7 w5-ns" />
+      </div>
+      <div class="db dtc-ns v-mid ph2 pr0-ns pl3-ns">
+        <p class="lh-copy">
+          For desktop, this text is vertically aligned middle, no matter what the height of the image is.
+          On mobile, this is a paragraph below an image.
+        </p>
+      </div>
+    </div>
+
+- name: flag-object
+  description: |
+    <div class="dt mw6 center pv4 pv5-m pv6-ns">
+      <div class="dtc v-mid">
+        <img src="http://lorempixel.com/400/200/sports/" alt="A bright blue sky" class="mw5" />
+      </div>
+      <div class="dtc v-mid pl3">
+        <p class="lh-copy">
+          This text is vertically aligned middle, no matter what the height of the image is.
+        </p>
+      </div>
+    </div>
+
+- name: four-column-collapse-two
+  description: |
+    <section class="cf">
+      <div class="fl w-50 w-25-ns"><img class="db w-100" src="http://lorempixel.com/400/200/animals" alt="night sky over house"></div>
+      <div class="fl w-50 w-25-ns"><img class="db w-100" src="http://lorempixel.com/400/200/animals" alt="night sky over water"></div>
+      <div class="fl w-50 w-25-ns"><img class="db w-100" src="http://lorempixel.com/400/200/animals" alt="bay bridge at night"></div>
+      <div class="fl w-50 w-25-ns"><img class="db w-100" src="http://lorempixel.com/400/200/animals" alt="night sky over land"></div>
+    </section>
+
+- name: four-column
+  description: |
+    <div class="cf">
+      <div class="fl w-25 tc pv5 bg-black-05">
+        1
+      </div>
+      <div class="fl w-25 tc pv5 bg-black-025">
+        2
+      </div>
+      <div class="fl w-25 tc pv5 bg-black-05">
+        3
+      </div>
+      <div class="fl w-25 tc pv5 bg-black-025">
+        4
+      </div>
+    </div>
+
+- name: two-column-collapse-one
+  description: |
+    <article class="cf">
+      <div class="fl w-100 w-50-ns bg-near-white tc">
+        <h1>Column One</h1>
+      </div>
+      <div class="fl w-100 w-50-ns bg-light-gray tc">
+        <h1>Column Two</h1>
+      </div>
+    </article>
+
+- name: two-column
+  description: |
+    <article class="cf">
+      <div class="fl w-50 bg-near-white tc">
+        <h1>Column One</h1>
+      </div>
+      <div class="fl w-50 bg-light-gray tc">
+        <h1>Column Two</h1>
+      </div>
+    </article>
+
+- name: border-spaced
+  description: |
+    <article class="pa3 pa5-ns">
+      <h1 class="f4 bold center mw6">Cats</h1>
+      <ul class="list pl0 ml0 center mw6 ba b--light-silver br2">
+        <li class="ph3 pv3 bb b--light-silver">Mackeral Tabby</li>
+        <li class="ph3 pv3 bb b--light-silver">Burmese</li>
+        <li class="ph3 pv3 bb b--light-silver">Orange Tabby</li>
+        <li class="ph3 pv3 bb b--light-silver">Maine Coon</li>
+        <li class="ph3 pv3 bb b--light-silver">Siamese</li>
+        <li class="ph3 pv3 bb b--light-silver">Scottish Fold</li>
+        <li class="ph3 pv3">American Bobtail</li>
+      </ul>
+    </article>
+
+- name: border-tight
+  description: |
+    <h1 class="f4 bold center mw5">Cats</h1>
+    <ul class="list pl0 ml0 center mw5 ba b--light-silver br3">
+      <li class="ph3 pv2 bb b--light-silver">Mackeral Tabby</li>
+      <li class="ph3 pv2 bb b--light-silver">Burmese</li>
+      <li class="ph3 pv2 bb b--light-silver">Maine Coon</li>
+      <li class="ph3 pv2 bb b--light-silver">Orange Tabby</li>
+      <li class="ph3 pv2 bb b--light-silver">Siamese</li>
+      <li class="ph3 pv2 bb b--light-silver">Scottish Fold</li>
+      <li class="ph3 pv2">American Bobtail</li>
+    </ul>
+
+- name: large-links-inline
+  description: |
+    <ul class="list pa3 pa5-ns">
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Abyssinian</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Aegean</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Arabian</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Australian</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Asian</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Balinese</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Bambino</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Bengal</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Birman</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Bombay</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Brazilian</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">British</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">British</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">British</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Burmese</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Burmilla</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">California</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Chantilly</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Chartreux</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Chausie</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Cheetoh</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Colorpoint</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Cornish</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Cymric</a></li>
+      <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">Cyprus</a></li>
+    </ul>
+
+- name: links-inline
+  description: |
+    <ul class="list ph3 ph5-ns pv4">
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Abyssinian</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Aegean</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Arabian</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Australian</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Asian</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Balinese</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Bambino</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Bengal</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Birman</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Bombay</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Brazilian</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">British</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">British</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">British</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Burmese</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Burmilla</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">California</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Chantilly</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Chartreux</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Chausie</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Cheetoh</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Colorpoint</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Cornish</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Cymric</a></li>
+      <li class="dib mr2"><a href="#" class="f6 f5-ns b db pa2 link dim mid-gray">Cyprus</a></li>
+    </ul>
+
+- name: links-borders-inline
+  description: |
+    <ul class="list ph3 ph5-ns pv4">
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Abyssinian</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Aegean</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Arabian</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Australian</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Asian</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Balinese</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Bambino</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Bengal</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Birman</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Bombay</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Brazilian</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">British</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">British</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">British</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Burmese</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Burmilla</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">California</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Chantilly</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Chartreux</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Chausie</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Cheetoh</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Colorpoint</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Cornish</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Cymric</a></li>
+      <li class="dib mr1 mb2"><a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">Cyprus</a></li>
+    </ul>
+
+- name: slab-stat-large
+  description: |
+    <article class="pa3 pa5-ns" data-name="slab-stat-large">
+      <h3 class="f6 ttu tracked">Today</h3>
+      <div class="cf">
+        <dl class="db dib-l w-auto-l lh-title mr6-l">
+          <dd class="f6 fw4 ml0">Closed Issues</dd>
+          <dd class="f2 f-subheadline-l fw6 ml0">1,024</dd>
+        </dl>
+        <dl class="db dib-l w-auto-l lh-title mr6-l">
+          <dd class="f6 fw4 ml0">Open Issues</dd>
+          <dd class="f2 f-subheadline-l fw6 ml0">993</dd>
+        </dl>
+        <dl class="db dib-l w-auto-l lh-title mr6-l">
+          <dd class="f6 fw4 ml0">Next Release</dd>
+          <dd class="f2 f-subheadline-l fw6 ml0">10-22</dd>
+        </dl>
+        <dl class="db dib-l w-auto-l lh-title mr6-l">
+          <dd class="f6 fw4 ml0">Days Left</dd>
+          <dd class="f2 f-subheadline-l fw6 ml0">4</dd>
+        </dl>
+        <dl class="db dib-l w-auto-l lh-title mr6-l">
+          <dd class="f6 fw4 ml0">Favorite Cat</dd>
+          <dd class="f2 f-subheadline-l fw6 ml0">All of Them</dd>
+        </dl>
+        <dl class="db dib-l w-auto-l lh-title">
+          <dd class="f6 fw4 ml0">App Downloads</dd>
+          <dd class="f2 f-subheadline-l fw6 ml0">1,200</dd>
+        </dl>
+      </div>
+    </article>
+
+- name: slab-stat-small
+  description: |
+    <article class="pa3 pa5-ns" data-name="slab-stat-small">
+      <h3 class="f6 ttu tracked">Today</h3>
+      <div class="cf">
+        <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
+          <dd class="f6 fw4 ml0">Closed Issues</dd>
+          <dd class="f3 fw6 ml0">1,024</dd>
+        </dl>
+        <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
+          <dd class="f6 fw4 ml0">Open Issues</dd>
+          <dd class="f3 fw6 ml0">993</dd>
+        </dl>
+        <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
+          <dd class="f6 fw4 ml0">Next Release</dd>
+          <dd class="f3 fw6 ml0">10-22</dd>
+        </dl>
+        <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
+          <dd class="f6 fw4 ml0">Days Left</dd>
+          <dd class="f3 fw6 ml0">4</dd>
+        </dl>
+        <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
+          <dd class="f6 fw4 ml0">Favorite Cat</dd>
+          <dd class="f3 fw6 ml0">All of Them</dd>
+        </dl>
+        <dl class="fl fn-l w-50 dib-l w-auto-l lh-title">
+          <dd class="f6 fw4 ml0">App Downloads</dd>
+          <dd class="f3 fw6 ml0">1,200</dd>
+        </dl>
+      </div>
+    </article>
+
+- name: slab-stat
+  description: |
+    <article class="pa3 pa5-ns" data-name="slab-stat">
+      <h1>Today</h1>
+      <dl class="dib mr5">
+        <dd class="f6 f5-ns b ml0">Closed Issues</dd>
+        <dd class="f3 f2-ns b ml0">1,024</dd>
+      </dl>
+      <dl class="dib mr5">
+        <dd class="f6 f5-ns b ml0">Open Issues</dd>
+        <dd class="f3 f2-ns b ml0">993</dd>
+      </dl>
+      <dl class="dib mr5">
+        <dd class="f6 f5-ns b ml0">Next Release</dd>
+        <dd class="f3 f2-ns b ml0">10-22</dd>
+      </dl>
+      <dl class="dib mr5">
+        <dd class="f6 f5-ns b ml0">Days Left</dd>
+        <dd class="f3 f2-ns b ml0">4</dd>
+      </dl>
+      <dl class="dib mr5">
+        <dd class="f6 f5-ns b ml0">Favorite Cat</dd>
+        <dd class="f3 f2-ns b ml0">All of Them</dd>
+      </dl>
+      <dl class="dib">
+        <dd class="f6 f5-ns b ml0">App Downloads</dd>
+        <dd class="f3 f2-ns b ml0">1,200</dd>
+      </dl>
+    </article>
+
+- name: title-text-list
+  description: |
+    <ul class="list pl0">
+      <li class="pa3 pa4-ns bb b--black-10">
+        <b class="db f3 mb1">alignment</b>
+        <span class="f5 db lh-copy measure">
+          The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.</span>
+      </li>
+      <li class="pa3 pa4-ns bb b--black-10">
+        <b class="db f3 mb1">
+          ascender
+        </b>
+        <span class="f5 db lh-copy measure">
+          The part of lowercase letters (such as k, b, and d) that ascends above the
+          x-height of the other lowercase letters in a face.
+        </span>
+      </li>
+      <li class="pa3 pa4-ns bb b--black-10">
+        <b class="db f3 mb1">
+          baseline
+        </b>
+        <span class="f5 db lh-copy measure">
+          The imaginary line on which the majority of the characters in a typeface rest.
+        </span>
+      </li>
+    </ul>
+
+- name: large-title-link-list
+  description: |
+    <nav class="pa3 pa4-ns">
+      <a class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">Site Name</a>
+      <div class="tc pb3">
+        <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Home">Home</a>
+        <a class="link dim gray f6 f5-ns dib mr3" href="#" title="About">About</a>
+        <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Store">Store</a>
+        <a class="link dim gray f6 f5-ns dib" href="#" title="Contact">Contact</a>
+      </div>
+    </nav>
+
+- name: list-overflow
+  description: |
+    <nav class="ph3 ph5-ns pv4">
+      <div class="nowrap overflow-x-auto">
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 1">Link 1</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 2">Link 2</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 3">Link 3</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 4">Link 4</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 5">Link 5</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 6">Link 6</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 7">Link 7</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 8">Link 8</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 9">Link 9</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 10">Link 10</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 11">Link 11</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 12">Link 12</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 13">Link 13</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 14">Link 14</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 15">Link 15</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 16">Link 16</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 17">Link 17</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 18">Link 18</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 19">Link 19</a>
+        <a class="link dim gray f5 f4-ns dib mr3" href="#" title="Link 20">Link 20</a>
+      </div>
+    </nav>
+
+- name: logo-links-inline-collapse
+  description: |
+    <nav class="db dt-l w-100 border-box pa3 ph5-l">
+      <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
+        <img src="http://lorempixel.com/400/200/abstract" class="dib w2 h2 br-100" alt="Site Name">
+      </a>
+      <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+        <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Home">Home</a>
+        <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="How it Works">How it Works</a>
+        <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Blog">Blog</a>
+        <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Press">Press</a>
+        <a class="link dim dark-gray f6 f5-l dib" href="#" title="Contact">Contact</a>
+      </div>
+    </nav>
+
+- name: logo-links
+  description: |
+    <nav class="dt w-100 border-box pa3 ph5-ns">
+      <a class="dtc v-mid mid-gray link dim w-25" href="#" title="Home">
+        <img src="http://lorempixel.com/400/200/abstract" class="dib w2 h2 br-100" alt="Site Name">
+      </a>
+      <div class="dtc v-mid w-75 tr">
+        <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="About">Services</a>
+        <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Store">Blog</a>
+        <a class="link dim dark-gray f6 f5-ns dib" href="#" title="Contact">Join Us</a>
+      </div>
+    </nav>
+
+- name: title-link-list
+  description: |
+    <nav class="pa3 pa4-ns">
+      <a class="link dim black b f6 f5-ns dib mr3" href="#" title="Home">Site Name</a>
+      <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Home">Home</a>
+      <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="About">About</a>
+      <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Store">Store</a>
+      <a class="link dim gray    f6 f5-ns dib" href="#" title="Contact">Contact</a>
+    </nav>

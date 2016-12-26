@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Settings » New User</title>
+  <meta name="description" content="Static frontend template for Analog Garage">
+
+  <link rel="canonical" href="/settings-new-user.html">
+  <link rel="alternate" type="application/rss+xml" title="Analog Garage Frontend" href="/feed.xml">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/fastclick.js"></script>
+  <script src="js/chart.js"></script>
+  
+
+
+
+</head>
+
+
+  <body class="roboto bg-light-gray q-purple-mid-dark">
+
+    <header class="bg-white br0 dt-l relative widget z-9999">
+  <nav class="dt dtc-l w-100 center bg-white cf-m cf-l">
+    <div class="fl-l pl20px dtc w-100 w-auto-l db-l v-mid z-9999 relative bg-white bb bn-l b--q-purple-fade">
+      <a class="db p0 border-box pointer" id="logo" href="index.html">quantum</a>
+    </div>
+    <span class="p0 m0 bg-white dtc dn-l v-mid tc f6 fw6 bb bl b--q-purple-fade black fr z-9999 relative mobile-toggle">Menu</span>
+    <div class="fr-l dn db-l v-mid tc tr-l fixed relative-l w-100 w-auto-l left-0 menu z-999">
+      <div class="absolute static-l menu-container w-100 w-50-m bg-white right-0 tl-m">
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="index.html" >Dashboard</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="get-started.html" >Alert History</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="group.html" >Notifications</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="asset.html" >Network Profiles</a>
+        <a class="black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="settings.html" >Settings</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <form class="searchbar pa0-l ph20px db dtc-l mb0 pb0 pt0 bl-l b--q-purple-fade">
+    <fieldset class="cf bn ma0 pa0">
+      <div class="cf">
+        <input class="f7 input-reset bn fl bg-white pa3 lh-solid w-100 w-80-l br2-l br--left-l pl0" placeholder="Search for groups, assets, and cameras" autocomplete="off" type="text" name="search" value="" id="home-search">
+      </div>
+    </fieldset>
+    <div class="results bg-white pa0">
+      <div class="results-row dt ">
+
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-q-green br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Main Floor</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Asset is normal</p>
+        </div>
+      </div>
+      <div class="results-row dt ">
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-q-green br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Oil &amp; Gas Monitoring</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Asset is normal</p>
+        </div>
+      </div>
+      <div class="results-row dt ">
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-white br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Matt D. Smith</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Technical</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </form>
+</header>
+
+
+
+    <div class="pt40px center measure ph3 relative">
+              <div class="db cf mb2">
+        <h2 class="q-purple-dark f2 fw7 mb2">Invite Others</h2>
+        <p class="mb4 lh-copy q-purple-mid-dark">Let others share the workload.</p>
+
+      </div>
+
+
+
+
+
+    <form action="" method="get" accept-charset="utf-8">
+
+
+        <div class="mb4">
+          <label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="name">Email</label>
+          <input class="ph3 input-reset ba w-100 bg-white b--q-purple-fade ba br2 mb3" placeholder="sample@test.com" type="email" name="name"  id="name">
+        </div>
+
+        <div class="mb4">
+          <label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="type">Account Type</label>
+          <div class="radio-container bg-white ba b--q-purple-fade mb3">
+            <div class="db">
+              <input type="radio" id="admin" name="radio" />
+              <label for="admin" class="bb b--q-purple-fade">Admin</label>
+            </div>
+            <div class="db">
+              <input type="radio" id="technical" name="radio" checked="checked" />
+              <label for="technical" class="">Technical</label>
+            </div>
+          </div>
+          <small class="f7 fw4 q-purple-mid db mb3">Admins have full control over users, billing, etc. Technical users can monitor and report on the full system, but can only control their own individual preferences.</small>
+        </div>
+
+      <div class="mt3">
+          <a class="btn b input-reset bn white bg-q-purple pointer f5 w-100 br2 mb3" href="get-started-3.html">Send Invitation</a>
+          <a class="btn b input-reset bn q-purple-dark bg-white pointer f5 w-100 br2 mb3" href="index.html">Cancel</a>
+      </div>
+    </form>
+
+        <footer class="cf w-100 v-mid">
+  <p class="db fl f8 fw4 v-mid q-purple-mid pa0 ma0">© 2017 ADI</p>
+  <div class="tr db fr">
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Contact Us</a>
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Privacy</a>
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Legal</a>
+  </div>
+</footer>
+<div class="fixed bottom-1 left-1 br2 pv2 ph3 f6 fw7 ttu bg-q-purple-dark q-pink glow o-30 show-page-links">Pages List</div>
+
+<div class="fixed bg-white pages-overlay">
+  <div class="close-page-overlay white bg-q-pink pointer">&#10005;</div>
+    <div class="overlay-scroll">
+     
+
+         <a href="/asset-settings.html" class="q-pink">Asset » Asset Settings</a>
+
+     
+
+         <a href="/asset.html" class="q-pink">Asset</a>
+
+     
+
+         <a href="/camera-settings.html" class="q-pink">Camera » Settings</a>
+
+     
+
+         <a href="/camera-timelapse.html" class="q-pink">Camera Timelapse</a>
+
+     
+
+         <a href="/camera.html" class="q-pink">Camera</a>
+
+     
+
+         <a href="/forgot-password.html" class="q-pink">Login » Forgot Password</a>
+
+     
+
+         <a href="/get-started-2.html" class="q-pink">FTUX Step 2</a>
+
+     
+
+         <a href="/get-started-3.html" class="q-pink">FTUX Step 3</a>
+
+     
+
+         <a href="/get-started.html" class="q-pink">FTUX » Step 1</a>
+
+     
+
+         <a href="/group-add-new-image.html" class="q-pink">Group » Add New Group 2</a>
+
+     
+
+         <a href="/group-add-new.html" class="q-pink">Group » Add New Group</a>
+
+     
+
+         <a href="/group-delete.html" class="q-pink">Group » Delete Group</a>
+
+     
+
+         <a href="/group-edit.html" class="q-pink">Group » Edit Group</a>
+
+     
+
+         <a href="/group-tooltip.html" class="q-pink">Group</a>
+
+     
+
+         <a href="/group.html" class="q-pink">Group</a>
+
+     
+
+         <a href="/" class="q-pink">Dashboard</a>
+
+     
+
+         <a href="/login.html" class="q-pink">Login</a>
+
+     
+
+         <a href="/network-profile-edit.html" class="q-pink">Network Profile » Edit</a>
+
+     
+
+         <a href="/network-profiles.html" class="q-pink">Network Profile</a>
+
+     
+
+         <a href="/notification-existing-list.html" class="q-pink">Notifications » Lists</a>
+
+     
+
+         <a href="/notification-new-list.html" class="q-pink">Notifications » New List</a>
+
+     
+
+         <a href="/notifications.html" class="q-pink">Notifications</a>
+
+     
+
+         <a href="/settings-billing.html" class="q-pink">Settings » Billing</a>
+
+     
+
+         <a href="/settings-edit-member.html" class="q-pink">Settings » Edit Member</a>
+
+     
+
+         <a href="/settings-member.html" class="q-pink">Settings » Members</a>
+
+     
+
+         <a href="/settings-new-user.html" class="q-pink">Settings » New User</a>
+
+     
+
+         <a href="/settings.html" class="q-pink">Settings</a>
+
+     
+     </div>
+ </div>
+
+
+    </div>
+
+  </body>
+
+</html>

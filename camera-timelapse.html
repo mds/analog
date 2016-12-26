@@ -1,0 +1,29 @@
+---
+layout: full-width
+title: Camera Timelapse
+---
+
+<div class="cf">
+
+  <div class="fl db w-100 fw-left-col v-top br-l b--q-purple-fade full-height overflow-hidden-l relative">
+    {% include layout/breadcrumbs.html %}
+    <img src="../images/thermal_1.jpg" class="w-100 db v-center-l" alt="">
+  </div>
+  <div class="fl db w-100 fw-right-col ph4 pv4 full-height overflow-hidden-l overflow-y-scroll-l">
+    {% include components/hotspots.html %}
+  	<div class="bb b--q-purple-fade pb4">
+      <div class="db cf mb2">
+    		<h2 class="db q-purple-dark f2 fw7 ma0">Camera 01.01<a class="btn small db f6 fw4 link br2 ph2 pv0 black bg-white widget fr" href="camera-settings.html">edit</a></h2>
+      </div>
+      <span class="mb4 ttu f7 fw5 q-purple-dark db">CAMERA ID 987976F3</span>
+  		<p class="q-purple-mid f6 fw3 w-70-l">This is a description field to give a little more context to what this camera is monitoring.</p>
+    </div>
+
+  	<div class="db pv4 assets-container cf">
+  			{% include components/camera-single.html %}
+        {% include components/camera-activity.html %}
+  	</div>
+
+  </div>
+</div>
+{% include components/modal-video.html %}

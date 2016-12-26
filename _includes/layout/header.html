@@ -1,0 +1,59 @@
+<header class="bg-white br0 dt-l relative widget z-9999">
+  <nav class="dt dtc-l w-100 center bg-white cf-m cf-l">
+    <div class="fl-l pl20px dtc w-100 w-auto-l db-l v-mid z-9999 relative bg-white bb bn-l b--q-purple-fade">
+      <a class="db p0 border-box pointer" id="logo" href="index.html">quantum</a>
+    </div>
+    <span class="p0 m0 bg-white dtc dn-l v-mid tc f6 fw6 bb bl b--q-purple-fade black fr z-9999 relative mobile-toggle">Menu</span>
+    <div class="fr-l dn db-l v-mid tc tr-l fixed relative-l w-100 w-auto-l left-0 menu z-999">
+      <div class="absolute static-l menu-container w-100 w-50-m bg-white right-0 tl-m">
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="{{ "index.html" | prepend: site.baseurl }}" >Dashboard</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="{{ "get-started.html" | prepend: site.baseurl }}" >Alert History</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="{{ "group.html" | prepend: site.baseurl }}" >Notifications</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="{{ "asset.html" | prepend: site.baseurl }}" >Network Profiles</a>
+        <a class="black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="{{ "settings.html" | prepend: site.baseurl }}" >Settings</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <form class="searchbar pa0-l ph20px db dtc-l mb0 pb0 pt0 bl-l b--q-purple-fade">
+    <fieldset class="cf bn ma0 pa0">
+      <div class="cf">
+        <input class="f7 input-reset bn fl bg-white pa3 lh-solid w-100 w-80-l br2-l br--left-l pl0" placeholder="Search for groups, assets, and cameras" autocomplete="off" type="text" name="search" value="" id="home-search">
+      </div>
+    </fieldset>
+    <div class="results bg-white pa0">
+      <div class="results-row dt ">
+
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-q-green br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Main Floor</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Asset is normal</p>
+        </div>
+      </div>
+      <div class="results-row dt ">
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-q-green br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Oil &amp; Gas Monitoring</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Asset is normal</p>
+        </div>
+      </div>
+      <div class="results-row dt ">
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-white br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Matt D. Smith</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Technical</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </form>
+</header>

@@ -1,0 +1,11 @@
+<div class="notification-widget widget bg-q-purple-mid-dark p0 br2 mb4">
+  {% for asset in site.data.assets %}
+     {% if asset.report %}
+        <div class="notification-row db">
+          <div class="dib status status-anomaly bg-q-orange"></div>
+          <p class="asset-name db pv3 ma0 fw6 f6 white bb b--white-10 row-link pr4">{{ asset.name }} <span class="fw1">{{ asset.report }}</span></p>
+        </div>
+    {% endif %}
+  {% endfor %}
+  <p class="asset-count db ma0 pv3 f6 w-100 fw6 white">See Alert History</p>
+</div>

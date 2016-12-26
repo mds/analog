@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  {% include layout/head.html %}
+
+  <body class="roboto bg-light-gray q-purple-mid-dark">
+
+    {% include layout/header.html %}
+
+    <div class="mw8 center ph3 ph3-ns ph4-m ph0-l mb4">
+        {{ content }}
+    </div>
+    <div class="ph3">
+    {% include layout/footer.html %}
+    </div>
+  </body>
+</html>

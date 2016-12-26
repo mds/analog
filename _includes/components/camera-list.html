@@ -1,0 +1,80 @@
+
+
+
+
+<script>
+    window.onload = function() {
+
+      {% for asset in site.data.assets %}
+        {% for camera in asset.camera %}
+          var data{{ camera.form-id }} = chance.n(chance.integer, 80, {min: 90, max: 110});
+        var ctx{{ camera.form-id }} = document.getElementById("cam{{ camera.form-id }}").getContext("2d");
+        window.myLine = new Chart(ctx{{ camera.form-id }}, {
+          type: 'line',
+          data: {
+              labels: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",""],
+              datasets: [{
+                  fill: false,
+                  lineTension: '0',
+                  radius: '0',
+                  borderJoinStyle: 'round',
+                  borderWidth: 1,
+                  backgroundColor: '#ffffff',
+                  borderColor: '#47BF43',
+                  data: data{{ camera.form-id }}
+              }]
+          },
+          options: {
+              responsive: true,
+              legend:{
+                  display: false,
+              },
+
+
+              hover: {
+                  mode: 'nearest',
+                  intersect: true
+              },
+              scaleLineColor : "transparent",
+              scales: {
+
+                xAxes: [{
+                    gridLines: {
+                         display: false,
+                         drawBorder: false,
+                    },
+                 }],
+                 yAxes: [{
+                   ticks: {
+                     min: 90,
+                     max: 120,
+                     stepSize: 120
+                   },
+                   gridLines: {
+                        drawBorder: false,
+                   },
+                 }]
+              }
+          }
+        });
+        {% endfor %}
+      {% endfor %}
+    };
+</script>
+
+{% for asset in site.data.assets %}
+  {% for camera in asset.camera %}
+  <div class="fl w-50 w-third-m w-25-l ph2-m ph2-l {% cycle 'pr1', 'pl1' %}">
+    <article class="bg-white w-100 widget br2 b--black-10 mb3">
+      <div class="relative">
+        <span class="z999 temp absolute bottom-1 left-1 f3 fw6 white lh-solid">{{ camera.temp }}&deg;</span>
+        <img src="../images/thermal_{{ camera.form-id }}.jpg" class="w-100 db br2 br--top" alt="">
+      </div>
+      <div class="pa3">
+        <h3 class="f5 pt0 mt0">{{ camera.cam-name }}</h3>
+        <canvas id="cam{{ camera.form-id }}"></canvas>
+      </div>
+    </article>
+  </div>
+  {% endfor %}
+{% endfor %}

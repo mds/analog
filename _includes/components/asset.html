@@ -1,0 +1,21 @@
+{% for asset in site.data.assets %}
+  <div class="w-100 w-50-m fl-m {% cycle 'pr2-m', 'pl2-m' %}">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">{{ asset.name }}</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        {% if asset.report %}
+            <div class="dib asset-status-wrapper mr2 mr4-l">
+              <div class="dib status status-anomaly bg-q-orange v-mid"></div>
+              <div class="dib pl2 v-mid">{{ asset.cams }}</div>
+            </div>
+        {% endif %}
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">{{ asset.cams }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}

@@ -1,0 +1,12 @@
+<div class="fixed bottom-1 left-1 br2 pv2 ph3 f6 fw7 ttu bg-q-purple-dark q-pink glow o-30 show-page-links">Pages List</div>
+
+<div class="fixed bg-white pages-overlay">
+  <div class="close-page-overlay white bg-q-pink pointer">&#10005;</div>
+    <div class="overlay-scroll">
+     {% for p in site.pages %}
+
+         <a href="{{ p.url }}" class="q-pink">{{ p.title }}</a>
+
+     {% endfor %}
+     </div>
+ </div>

@@ -1,0 +1,75 @@
+<script>
+    window.onload = function() {
+        var dataList = chance.n(chance.integer, 80, {min: 90, max: 110});
+        var ctxSingle = document.getElementById("cam-single").getContext("2d");
+        window.myLine = new Chart(ctxSingle, {
+          type: 'line',
+          data: {
+              labels: ["11/17", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "","11/18"],
+              datasets: [{
+                  fill: false,
+                  lineTension: '0',
+                  radius: '0',
+                  borderJoinStyle: 'round',
+                  borderWidth: 1,
+                  backgroundColor: '#ffffff',
+                  borderColor: '#47BF43',
+                  data: dataList
+              }]
+          },
+          options: {
+              defaultFontColor: '#47BF43',
+              responsive: true,
+              legend:{
+                  display: false,
+              },
+
+              hover: {
+                  mode: 'nearest',
+                  intersect: true
+              },
+              scaleLineColor : "transparent",
+              scales: {
+                xAxes: [{
+                    gridLines: {
+                         display: false,
+                         drawBorder: false,
+                    },
+                    ticks: {
+                      maxRotation: 0
+
+                    },
+                 }],
+                 yAxes: [{
+                   ticks: {
+                     min: 90,
+                     max: 120,
+                     stepSize: 120,
+                     fontColor: '#292977',
+                     fontFamily: 'Roboto',
+                     fontStyle: 'bold',
+                     padding: 20,
+                     position: 'right',
+
+                   },
+
+                   gridLines: {
+                        drawBorder: false,
+
+                   },
+                 }]
+              }
+          }
+        });
+        window.myLine.resize();
+    };
+</script>
+
+
+
+<article class="bg-white w-100 widget br2 b--black-10 mb3 pt3 pr3">
+
+    <canvas id="cam-single" height="100px"></canvas>
+    <a class="q-pink fw6 tc mt0 pt0 pb3 db f7" href="camera-timelapse.html">&#9658; View Time Lapse</a>
+
+</article>

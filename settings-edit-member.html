@@ -1,0 +1,91 @@
+---
+layout: narrow
+title: Settings » Edit Member
+---
+
+
+
+
+
+      <div class="db cf mb2">
+        <h2 class="q-purple-dark f2 fw7 mb2">Edit Member</h2>
+        <p class="mt0 mb4 lh-copy q-purple-mid-dark">Let others share the workload.</p>
+
+      </div>
+
+
+
+
+
+    <form action="" method="get" accept-charset="utf-8">
+
+
+        <div class="mb4">
+          <label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="name">Name</label>
+          <input class="ph3 input-reset ba w-100 bg-white b--q-purple-fade ba br2" placeholder="sample@test.com" type="text" name="name"  id="name">
+        </div>
+
+        <div class="mb4">
+          <label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="email">Email</label>
+          <input class="ph3 input-reset ba w-100 bg-white b--q-purple-fade ba br2" placeholder="sample@test.com" type="email" name="email"  id="email">
+        </div>
+
+        <div class="mb4">
+          <label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="password">Password</label>
+          <input class="ph3 input-reset ba w-100 bg-white b--q-purple-fade ba br2" placeholder="Make it good" type="password" name="password"  id="password">
+  				<small class="f7 fw4 q-purple-mid db mt3">8 characters minimum.</small>
+        </div>
+
+        <div class="mb4">
+          <label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="type">Account Type</label>
+          <div class="radio-container bg-white ba b--q-purple-fade br2">
+            <div class="db">
+              <input type="radio" id="admin" name="radio" />
+              <label for="admin" class="bb b--q-purple-fade">Admin</label>
+            </div>
+            <div class="db">
+              <input type="radio" id="technical" name="radio" checked="checked" />
+              <label for="technical" class="">Technical</label>
+            </div>
+          </div>
+          <small class="f7 fw4 q-purple-mid db lh-copy mt3">Admins have full control over users, billing, etc. Technical users can monitor and report on the full system, but can only control their own individual preferences.</small>
+        </div>
+
+        <div class="mb4">
+    			<label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="name">Mobile Phone</label>
+    			<input class="ph3 input-reset ba w-100 bg-white b--q-purple-fade ba br2 mb3" placeholder="(706) 867 – 5309" type="number" name="name"  id="name">
+    			<small class="f7 fw4 q-purple-mid db">Only used for anomaly notifications.</small>
+    		</div>
+
+    		<div class="mb4">
+          <label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="time-zone">Time Zone</label>
+          <input class="ph3 input-reset ba w-100 bg-white b--q-purple-fade ba br2 mb3" placeholder="Select Time Zone" type="text" name="time-zone"  id="time-zone">
+
+        </div>
+        <div class="mb4">
+          <label class="db fw4 mb2 fw7 lh-copy f6 q-purple-mid-dark" for="temp">Temperature Display</label>
+          <div class="radio-container bg-white ba b--q-purple-fade br2">
+
+            <div class="db">
+              <input type="radio" id="admin" name="radio" />
+              <label for="admin" class="bb b--q-purple-fade">Fahrenheit</label>
+            </div>
+            <div class="db">
+              <input type="radio" id="technical" name="radio" checked="checked" />
+              <label for="technical" class="">Celcius</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt3">
+            <a class="btn b input-reset bn white bg-q-purple pointer f5 w-100 br2 mb3" href="get-started-3.html">Save</a>
+            <a class="btn b input-reset bn q-purple-dark bg-white pointer f5 w-100 br2 mb3" href="index.html">Cancel</a>
+        </div>
+
+    </form>
+
+    <div class="mb3 mt4 pt4 bt b--q-purple-fade">
+      <p class="q-purple-dark mb3 f6 fw7">Remove Member</p>
+      <p class="q-purple-mid f7 fw4">Removing this user will remove its data from your system.</p>
+      <a href="" class="q-pink f7 fw7">Remove this member</a>
+    </div>

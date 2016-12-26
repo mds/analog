@@ -1,0 +1,82 @@
+- name: Drilling Station
+  cams: 1 camera
+  status: ok
+
+- name: Mobile Deisel Heater
+  cams: 4 cameras
+  status: ok
+
+- name: Oil and Gas Monitoring
+  cams: 4 cameras
+  status: ok
+
+- name: Compact Units
+  cams: 8 cameras
+  status: ok
+  camera:
+    - cam-name: Camera 01.01
+      form-id: 1
+      temp: 96
+
+    - cam-name: Camera 01.02
+      form-id: 2
+      temp: 99
+
+    - cam-name: Camera 01.03
+      form-id: 3
+      temp: 97
+
+    - cam-name: Camera 01.04
+      form-id: 4
+      temp: 102
+
+
+
+
+- name: Four-phase High Pressure Separator
+  cams: 1 camera
+  status: anomaly
+  report: has reported 2 anomalies.
+
+- name: Pumping System
+  cams: 1 camera
+  status: ok
+
+- name: Fuel Storage Tank
+  cams: 3 camera
+  status: anomaly
+  report: has reported 2 anomalies.
+
+- name: Turbine Expander
+  cams: 1 camera
+  status: ok
+
+- name: Flaring System
+  cams: 1 camera
+  status: ok
+
+- name: Auxiliary Platform
+  cams: 2 camera
+  status: anomaly
+  report: has reported 1 anomaly.
+
+- name: Electric Power
+  cams: 1 camera
+  status: ok
+
+- name: Vapour
+  cams: 1 camera
+  status: ok
+
+- name: Hot Water Heater
+  cams: 2 camera
+  status: anomaly
+  report: has reported 2 anomalies.
+
+- name: Cogenerator Heat Source
+  cams: 1 camera
+  status: ok
+
+- name: Turboexpander
+  cams: 1 camera
+  status: ok

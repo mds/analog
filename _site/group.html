@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Group</title>
+  <meta name="description" content="Static frontend template for Analog Garage">
+
+  <link rel="canonical" href="/group.html">
+  <link rel="alternate" type="application/rss+xml" title="Analog Garage Frontend" href="/feed.xml">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/fastclick.js"></script>
+  <script src="js/chart.js"></script>
+  
+
+
+
+</head>
+
+
+  <body class="roboto bg-light-gray q-purple-mid-dark">
+
+    <header class="bg-white br0 dt-l relative widget z-9999">
+  <nav class="dt dtc-l w-100 center bg-white cf-m cf-l">
+    <div class="fl-l pl20px dtc w-100 w-auto-l db-l v-mid z-9999 relative bg-white bb bn-l b--q-purple-fade">
+      <a class="db p0 border-box pointer" id="logo" href="index.html">quantum</a>
+    </div>
+    <span class="p0 m0 bg-white dtc dn-l v-mid tc f6 fw6 bb bl b--q-purple-fade black fr z-9999 relative mobile-toggle">Menu</span>
+    <div class="fr-l dn db-l v-mid tc tr-l fixed relative-l w-100 w-auto-l left-0 menu z-999">
+      <div class="absolute static-l menu-container w-100 w-50-m bg-white right-0 tl-m">
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="index.html" >Dashboard</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="get-started.html" >Alert History</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="group.html" >Notifications</a>
+        <a class="bb bn-l b--q-purple-fade black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="asset.html" >Network Profiles</a>
+        <a class="black f6 fw5 db dib-l bg-white pv2 pv0-l pr3 ph3-m" href="settings.html" >Settings</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <form class="searchbar pa0-l ph20px db dtc-l mb0 pb0 pt0 bl-l b--q-purple-fade">
+    <fieldset class="cf bn ma0 pa0">
+      <div class="cf">
+        <input class="f7 input-reset bn fl bg-white pa3 lh-solid w-100 w-80-l br2-l br--left-l pl0" placeholder="Search for groups, assets, and cameras" autocomplete="off" type="text" name="search" value="" id="home-search">
+      </div>
+    </fieldset>
+    <div class="results bg-white pa0">
+      <div class="results-row dt ">
+
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-q-green br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Main Floor</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Asset is normal</p>
+        </div>
+      </div>
+      <div class="results-row dt ">
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-q-green br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Oil &amp; Gas Monitoring</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Asset is normal</p>
+        </div>
+      </div>
+      <div class="results-row dt ">
+        <div class="dtc ph3">
+          <div class="db status status-ok bg-white br-100 v-top"></div>
+        </div>
+        <div class="dtc bb b--q-purple-fade w-100 pv3 row-link">
+          <p class="pb2 pt0 ma0 fw7 f5 q-purple-dark" href="#">Matt D. Smith</p>
+          <p class="pa0 ma0 f7 q-purple-dark-mid" href="#">Technical</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </form>
+</header>
+
+
+
+    <div class="center bb b--q-purple-fade">
+        <div class="w-100 cf">
+
+  <div class="fl db w-100 fw-left-col v-top br-l b--q-purple-fade full-height overflow-hidden-l relative">
+    <div class="breadcrumbs ph3 bg-light-gray relative top-0-l w-100 b--q-purple-fade bb f7">
+  <a href="#" class="q-pink dib ma0 pa0">Dashboard</a><span class="dib q-pink ph3">&rsaquo;</span><a href="#" class="dib ma0 pa0 q-pink">Main Floor</a><span class="dib q-pink ph3">&rsaquo;</span><p class="ma0 pa0 dib black">Power Supply</p>
+</div>
+
+    <div class="full-height-container">
+
+
+        <div class="map-grid contain-content relative">
+          <div class="pointer edit-map-button absolute bottom-1 left-1 widget bg-white br2"></div>
+          
+
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute ok" style="top: 23%; left: 86%;" data-pin-number="1"></div>
+
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute ok" style="top: 8%; left: 39%;" data-pin-number="2"></div>
+
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute anomaly" style="top: 38%; left: 7%;" data-pin-number="3"></div>
+
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute ok" style="top: 4%; left: 56%;" data-pin-number="4"></div>
+
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute ok" style="top: 32%; left: 45%;" data-pin-number="5"></div>
+
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute anomaly" style="top: 15%; left: 9%;" data-pin-number="6"></div>
+
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute ok" style="top: 87%; left: 19%;" data-pin-number="7"></div>
+
+  <div class="asset-pin bg-green content-box db br4 white fw7 tc absolute ok" style="top: 68%; left: 17%;" data-pin-number="8"></div>
+
+
+        </div>
+
+
+      <div class="save-position relative absolute-l bottom-0-l w-100 left-0 bt-l bb bb-0-l b--q-purple-fade">
+        <div class="dt bg-white pv2 ph3 w-100">
+            <div class="dtc v-mid"><p>Reposition Assets</p></div>
+            <div class="tr dtc v-mid">
+              <p class="tc dib f6 fw4 link br2 pv2 q-pink bg-white w3 cancel-position pointer">Cancel</p>
+              <a class="tc dib f6 fw4 link br2 pv2 white bg-q-purple widget w3" href="camera-settings.html">Save</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl db w-100 fw-right-col ph4 pv4 full-height overflow-hidden-l overflow-y-scroll-l">
+    <div class="notification-widget widget bg-q-purple-mid-dark p0 br2 mb4">
+  
+     
+  
+     
+  
+     
+  
+     
+  
+     
+        <div class="notification-row db">
+          <div class="dib status status-anomaly bg-q-orange"></div>
+          <p class="asset-name db pv3 ma0 fw6 f6 white bb b--white-10 row-link pr4">Four-phase High Pressure Separator <span class="fw1">has reported 2 anomalies.</span></p>
+        </div>
+    
+  
+     
+  
+     
+        <div class="notification-row db">
+          <div class="dib status status-anomaly bg-q-orange"></div>
+          <p class="asset-name db pv3 ma0 fw6 f6 white bb b--white-10 row-link pr4">Fuel Storage Tank <span class="fw1">has reported 2 anomalies.</span></p>
+        </div>
+    
+  
+     
+  
+     
+  
+     
+        <div class="notification-row db">
+          <div class="dib status status-anomaly bg-q-orange"></div>
+          <p class="asset-name db pv3 ma0 fw6 f6 white bb b--white-10 row-link pr4">Auxiliary Platform <span class="fw1">has reported 1 anomaly.</span></p>
+        </div>
+    
+  
+     
+  
+     
+  
+     
+        <div class="notification-row db">
+          <div class="dib status status-anomaly bg-q-orange"></div>
+          <p class="asset-name db pv3 ma0 fw6 f6 white bb b--white-10 row-link pr4">Hot Water Heater <span class="fw1">has reported 2 anomalies.</span></p>
+        </div>
+    
+  
+     
+  
+     
+  
+  <p class="asset-count db ma0 pv3 f6 w-100 fw6 white">See Alert History</p>
+</div>
+
+  	<div class="bb b--q-purple-fade pb4">
+      <div class="db cf mb2">
+    		<h2 class="db q-purple-dark f2 fw7 ma0">Main Floor<a class="btn small db f6 fw4 link br2 ph2 pv0 black bg-white widget fr" href="#0">edit</a></h2>
+      </div>
+  		<p class="q-purple-mid f6 fw3">Manufacturing and packaging machines on the first floor.</p>
+    </div>
+
+  	<div class="db pv4 assets-container cf">
+  		<h4 class="pl3 f6">Assets</h4>
+  	  <div class="w-100">
+  			
+  <div class="w-100 w-50-m fl-m pr2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Drilling Station</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pl2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Mobile Deisel Heater</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">4 cameras</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pr2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Oil and Gas Monitoring</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">4 cameras</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pl2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Compact Units</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">8 cameras</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pr2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Four-phase High Pressure Separator</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+            <div class="dib asset-status-wrapper mr2 mr4-l">
+              <div class="dib status status-anomaly bg-q-orange v-mid"></div>
+              <div class="dib pl2 v-mid">1 camera</div>
+            </div>
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pl2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Pumping System</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pr2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Fuel Storage Tank</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+            <div class="dib asset-status-wrapper mr2 mr4-l">
+              <div class="dib status status-anomaly bg-q-orange v-mid"></div>
+              <div class="dib pl2 v-mid">3 camera</div>
+            </div>
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">3 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pl2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Turbine Expander</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pr2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Flaring System</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pl2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Auxiliary Platform</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+            <div class="dib asset-status-wrapper mr2 mr4-l">
+              <div class="dib status status-anomaly bg-q-orange v-mid"></div>
+              <div class="dib pl2 v-mid">2 camera</div>
+            </div>
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">2 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pr2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Electric Power</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pl2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Vapour</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pr2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Hot Water Heater</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+            <div class="dib asset-status-wrapper mr2 mr4-l">
+              <div class="dib status status-anomaly bg-q-orange v-mid"></div>
+              <div class="dib pl2 v-mid">2 camera</div>
+            </div>
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">2 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pl2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Cogenerator Heat Source</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w-100 w-50-m fl-m pr2-m">
+    <div class="asset-widget widget bg-white pa3 pr0 br2 f6 mb3 mb3-m mb3-l db">
+      <p class="asset-name db w-100 bb pb3 pt0 ma0 b--mid-gray fw7 f6 truncate pr2">Turboexpander</p>
+      <div class="asset-count db vm tl ma0 pt3 truncate pr2">
+
+        
+        <div class="dib asset-status-wrapper">
+          <div class="dib status status-ok bg-q-green br-100 v-mid"></div>
+          <div class="dib pl2 v-mid">1 camera</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  	  </div>
+  	</div>
+
+  </div>
+</div>
+
+    </div>
+
+    <div class="ph4">
+      <footer class="cf w-100 v-mid">
+  <p class="db fl f8 fw4 v-mid q-purple-mid pa0 ma0">© 2017 ADI</p>
+  <div class="tr db fr">
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Contact Us</a>
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Privacy</a>
+    <a class="q-purple-mid f8 fw4 dib pl4" href="">Legal</a>
+  </div>
+</footer>
+<div class="fixed bottom-1 left-1 br2 pv2 ph3 f6 fw7 ttu bg-q-purple-dark q-pink glow o-30 show-page-links">Pages List</div>
+
+<div class="fixed bg-white pages-overlay">
+  <div class="close-page-overlay white bg-q-pink pointer">&#10005;</div>
+    <div class="overlay-scroll">
+     
+
+         <a href="/asset-settings.html" class="q-pink">Asset » Asset Settings</a>
+
+     
+
+         <a href="/asset.html" class="q-pink">Asset</a>
+
+     
+
+         <a href="/camera-settings.html" class="q-pink">Camera » Settings</a>
+
+     
+
+         <a href="/camera-timelapse.html" class="q-pink">Camera Timelapse</a>
+
+     
+
+         <a href="/camera.html" class="q-pink">Camera</a>
+
+     
+
+         <a href="/forgot-password.html" class="q-pink">Login » Forgot Password</a>
+
+     
+
+         <a href="/get-started-2.html" class="q-pink">FTUX Step 2</a>
+
+     
+
+         <a href="/get-started-3.html" class="q-pink">FTUX Step 3</a>
+
+     
+
+         <a href="/get-started.html" class="q-pink">FTUX » Step 1</a>
+
+     
+
+         <a href="/group-add-new-image.html" class="q-pink">Group » Add New Group 2</a>
+
+     
+
+         <a href="/group-add-new.html" class="q-pink">Group » Add New Group</a>
+
+     
+
+         <a href="/group-delete.html" class="q-pink">Group » Delete Group</a>
+
+     
+
+         <a href="/group-edit.html" class="q-pink">Group » Edit Group</a>
+
+     
+
+         <a href="/group-tooltip.html" class="q-pink">Group</a>
+
+     
+
+         <a href="/group.html" class="q-pink">Group</a>
+
+     
+
+         <a href="/" class="q-pink">Dashboard</a>
+
+     
+
+         <a href="/login.html" class="q-pink">Login</a>
+
+     
+
+         <a href="/network-profile-edit.html" class="q-pink">Network Profile » Edit</a>
+
+     
+
+         <a href="/network-profiles.html" class="q-pink">Network Profile</a>
+
+     
+
+         <a href="/notification-existing-list.html" class="q-pink">Notifications » Lists</a>
+
+     
+
+         <a href="/notification-new-list.html" class="q-pink">Notifications » New List</a>
+
+     
+
+         <a href="/notifications.html" class="q-pink">Notifications</a>
+
+     
+
+         <a href="/settings-billing.html" class="q-pink">Settings » Billing</a>
+
+     
+
+         <a href="/settings-edit-member.html" class="q-pink">Settings » Edit Member</a>
+
+     
+
+         <a href="/settings-member.html" class="q-pink">Settings » Members</a>
+
+     
+
+         <a href="/settings-new-user.html" class="q-pink">Settings » New User</a>
+
+     
+
+         <a href="/settings.html" class="q-pink">Settings</a>
+
+     
+     </div>
+ </div>
+
+
+    </div>
+
+  </body>
+
+</html>

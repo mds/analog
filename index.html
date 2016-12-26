@@ -1,0 +1,45 @@
+---
+layout: default
+title: Dashboard
+---
+
+<div class="pv3">
+	{% include components/alerts.html %}
+</div>
+
+<div>
+	<div class="cf">
+		<div class="fl w-100 w-60-m w-70-l mb4 mb0-l">
+			<h2 class="q-purple-dark f2 fw7 mb2 mt0 pt0">15 Assets</h2>
+			<p class="q-purple-mid f6 fw3 mb0 pb0">0 assets in groups, 15 assets not in a group.</p>
+		</div>
+		<div class="fl w-100 w-40-m w-30-l">
+			<div class="bg-q-purple w-100 white tc fw7 f5 br2 btn create-new relative z-999">
+					<span>Create New...</span>
+					<div class="buttons-container">
+						<div class="arrow"></div>
+						<div class="bg-white modal br2 overflow-hidden">
+							<a class="btn bn q-pink bg-white pointer f5 w-100 bb" href="index.html">New Asset</a>
+							<a class="btn bn q-pink bg-white pointer f5 w-100" href="index.html">New Group</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="db pt4 groups-container">
+		<div class="w-100 w-50-ns tl pr2-m pr2-l">
+			{% include components/group.html %}
+		</div>
+	</div>
+	<div class="db pv4 assets-container cf">
+		<h4 class="pl3 f6">Assets</h4>
+	  <div class="w-100 tl cf-l">
+			{% include components/asset.html %}
+
+	  </div>
+	  <div class="fl w-100 w-50-ns tl pl2-m pl2-l">
+
+	  </div>
+	</div>
+</div>
