@@ -1,6 +1,6 @@
 # Analog-Garage
 
-Static frontend template for Analog Garage.
+Static front-end template for Analog Garage.
 
 ## Features
 * [Jekyll](https://github.com/jekyll/jekyll)
